@@ -73,74 +73,7 @@ export default function Card3() {
       </button>
     </div>
   </div>
-//   <div className="carousel-wrapper relative w-full overflow-hidden py-8">
-//   <div
-//     className="carousel whitespace-nowrap animate-scroll flex gap-4"
-//     style={{ animationDuration: '40s' }} // Adjust speed as needed
-//   >
-//     {/* Repeat 8 cards twice for smooth looping */}
-//     {[...Array(2)].map((_, i) => (
-//       <React.Fragment key={i}>
-//         <Cardtext
-//           key={`card1-${i}`}
-//           text="We've been working with Raha Financials for years and they've always provided us with top-notch service. Their expertise and attention to detail have been invaluable to our business."
-//           img={img5}
-//           title="Cody Fisher"
-//           parah="Deloitte"
-//         />
-//         <Cardtext
-//           key={`card2-${i}`}
-//           text="I can't recommend Raha Financials enough! Their team is extremely knowledgeable and always available to answer any questions we have. They've made our lives so much easier."
-//           img={img6}
-//           title="Jenny Wilson"
-//           parah="Behance"
-//         />
-//         <Cardtext
-//           key={`card3-${i}`}
-//           text="As a small business owner, I rely on Raha Financials to handle all my accounting needs. They're always up-to-date with the latest tax laws and regulations, which gives me peace of mind."
-//           img={img7}
-//           title="Ronald Richards"
-//           parah="Razer"
-//         />
-//         <Cardtext
-//           key={`card4-${i}`}
-//           text="Their financial strategies helped us scale our startup. They truly understand the needs of growing businesses."
-//           img={img8}
-//           title="Eleanor Pena"
-//           parah="Wise"
-//         />
-//         <Cardtext
-//           key={`card5-${i}`}
-//           text="RAHA's insight into budgeting and forecasting helped our NGO manage funds more effectively."
-//           img={img5}
-//           title="Albert Flores"
-//           parah="NGO Lead"
-//         />
-//         <Cardtext
-//           key={`card6-${i}`}
-//           text="Switching to RAHA was the best decision for our company’s financial planning. Clear, concise, and always on time."
-//           img={img6}
-//           title="Courtney Henry"
-//           parah="Dropbox"
-//         />
-//         <Cardtext
-//           key={`card7-${i}`}
-//           text="As a freelancer, I needed someone to guide my tax filings — RAHA made it painless and stress-free!"
-//           img={img7}
-//           title="Wade Warren"
-//           parah="Freelancer"
-//         />
-//         <Cardtext
-//           key={`card8-${i}`}
-//           text="Their personal touch and dedication stood out. I always feel like a priority client."
-//           img={img8}
-//           title="Kristin Watson"
-//           parah="Tech Founder"
-//         />
-//       </React.Fragment>
-//     ))}
-//   </div>
-// </div>
+
 
   );
 }

@@ -31,17 +31,24 @@ border: 1.5px solid rgba(255, 255, 255, 0.25);
 background: rgba(255, 255, 255, 0.10);
 box-shadow: 0px 4px 15.9px 0px rgba(255, 255, 255, 0.25) inset;
 backdrop-filter: blur(4.5px);
+color: white;
+padding: 5px;
+
 
  }
 .Spot:hover{
   border: 1px solid white;
+  color: black;
 }
+
 
 .SpotCard:hover{
   border-radius: 15px;
 background: #FFF;
-margin: 5px;
-height: 175px;
+
+height: 100%;
+
+
 }
 
 .coloredNum{
@@ -57,6 +64,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 15px;
+color: black;
 }
 
 .Spot:hover .coloredNum{
@@ -64,4 +72,211 @@ gap: 15px;
 background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
 color: #FFF;
 
+}
+.spot:hover .click{
+  color: #1445C2 !important;
+}
+
+
+.client {
+  display: flex;
+  justify-content: center;
+ /* Centering the container */
+  width: 100%; /* Making width responsive */
+  max-width: 40rem; /* Max width for larger screens */
+  padding: 2.1875rem; /* Consistent padding */
+  flex-direction: column; /* Stacked on small screens */
+  align-items: flex-start; /* Align form elements to the left */
+  gap: 1.25rem; /* Gap between form elements */
+  border-radius: 0.9375rem;
+  border: 2px solid var(--Main-Radial, #587EDB);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 0px 100px 40px 0px rgba(176, 176, 176, 0.01), 0px 56px 34px 0px rgba(176, 176, 176, 0.05), 0px 25px 25px 0px rgba(176, 176, 176, 0.09), 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+}
+
+@media (max-width: 768px) {
+  .client {
+    width: 90%; /* Ensuring the form takes up more space on small screens */
+    margin-left: 20px; /* Slightly reduce margin */
+    margin-right: 20px; /* Ensure there's no extra space on the right */
+  }
+}
+
+.client2{
+  display: flex;
+  justify-content: center;
+  margin-left:220px;
+ width: 54rem;
+ padding: 2.1875rem;
+ flex-direction: column;
+ gap: 1.25rem;
+ border-radius: 0.9375rem;
+ border: 2px solid var(--Main-Radial, #587EDB);
+ background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+ box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 0px 100px 40px 0px rgba(176, 176, 176, 0.01), 0px 56px 34px 0px rgba(176, 176, 176, 0.05), 0px 25px 25px 0px rgba(176, 176, 176, 0.09), 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+}
+.Clientinput {
+  padding: 15px;
+  font-size: 16px;
+  
+  
+  border-radius: 10px;
+  border: 1px solid #DADADA;
+  background: linear-gradient(to bottom, #ffffff, #DADADA);
+  box-shadow:
+    0px 156px 44px rgba(176, 176, 176, 0),
+    0px 100px 40px rgba(176, 176, 176, 0.01),
+    0px 56px 34px rgba(176, 176, 176, 0.05),
+    0px 25px 25px rgba(176, 176, 176, 0.09),
+    0px 6px 14px rgba(176, 176, 176, 0.1);
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Small screens - narrow input */
+@media (max-width: 480px) {
+  .Clientinput {
+    font-size: 14px;
+    padding: 12px;
+    max-width: 100%;
+  }
+}
+
+/* Large screens - wider input */
+@media (min-width: 1024px) {
+  .Clientinput {
+    max-width: 600px;
+  }
+}
+
+
+
+.Clientinput:focus {
+  border: 1px solid #587EDB;
+  box-shadow: 0 0 5px rgba(88, 126, 219, 0.5);
+}
+
+.Clientinput1{
+  display: flex;
+  padding: 10px 10px;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1 0 0;
+  border-radius: 10px;
+  border: 1px solid #DADADA;
+  background: linear-gradient(to bottom, #ffffff, #DADADA);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 0px 100px 40px 0px rgba(176, 176, 176, 0.01), 0px 56px 34px 0px rgba(176, 176, 176, 0.05), 0px 25px 25px 0px rgba(176, 176, 176, 0.09), 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+}
+
+.Clientinput1:focus {
+  border: 1px solid #1445C2;
+  outline: none; /* taaki browser ka default black outline na aaye */
+  color: black;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1445C2; /* Blue color on check */
+  cursor: pointer;
+}
+
+.point {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+  gap: 1.25rem;
+  border-radius: 0.9375rem;
+  border: 2px solid var(--Main-Radial, #587EDB);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 
+              0px 100px 40px 0px rgba(176, 176, 176, 0.01), 
+              0px 56px 34px 0px rgba(176, 176, 176, 0.05), 
+              0px 25px 25px 0px rgba(176, 176, 176, 0.09), 
+              0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+  width: 100%;
+  max-width: 40rem;
+  box-sizing: border-box;
+  font-size: 1rem; /* base font size */
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .point {
+    padding: 12px;
+    gap: 1rem;
+    margin-left: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .point {
+    padding: 10px;
+    gap: 0.75rem;
+    margin-left: 35px;
+    font-size: 0.875rem;
+    max-width: 80%;
+    
+  }
+}
+
+
+ .text{
+  align-self: stretch;
+  color: var(--Black, #000);
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.06188rem;
+padding-top: 3px;
+padding-bottom: 3px;
+ }
+ .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center on mobile */
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.section-btn {
+  width:80%;
+  max-width: 300px;
+  min-width: 350px;
+  padding: 16px 24px;
+  margin-top: 12px;
+  
+  font-weight: bold;
+  font-size: 1rem;
+  color: #4B5563; /* Tailwind's text-gray-600 */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #ffffff, #DADADA);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+
+/* Responsive styles */
+@media (min-width: 1024px) {
+  .button-container {
+    align-items: flex-start; /* align left on large screens */
+    margin-top: 0;
+  }
 }

@@ -2,15 +2,20 @@ import React, { useEffect } from 'react';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import AOS from 'aos'; // Import AOS library
 import Typewriter from 'typewriter-effect';
+import Card from './Card';
+import Homeform from './Homeform';
+import Card2 from './Card2';
+import Card3 from './Card3';
+import MidSection from './MidSection'
 
-export default function Headersection() {
+export default function Home() {
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
 
   return (
     <>
-      <div className='HomeHero max-w-7xl mx-auto text-center items-center py-10 px-5' data-aos="fade-up">
+      <div className='HomeHero max-w-7xl mx-auto text-center items-center py-5 px-5' data-aos="fade-up">
         <p className="pb-5 font-semibold text-sm sm:text-base md:text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="100">
           I am a
         </p>
@@ -87,18 +92,14 @@ export default function Headersection() {
           Book A Demo
         </button>
 
-        {/* Another Heading and Description */}
-        <div className="mt-20" data-aos="fade-up" data-aos-delay="300">
-          <h1 className="text-[50px] sm:text-[60px] lg:text-[65px] font-semibold tracking-[-0.06em] leading-[60px]">
-            Our Suite of Business and
-            <br /> Accounting Solutions
-          </h1>
-          <p className="text-[16px] sm:text-[19px] mt-5">
-            Full-service accounting solutions for enterprises and small businesses.
-            <br /> Tax, bookkeeping, payroll, and more.
-          </p>
-        </div>
+       
+   
       </div>
+      <Card/>
+<Homeform/>
+<MidSection/>
+<Card2/>
+<Card3/>
     </>
   );
 }

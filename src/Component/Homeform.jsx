@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import 'aos/dist/aos.css'; // Import the AOS CSS
+import AOS from 'aos'; // Import AOS ls
 
 export default function Homeform() {
   const [formData, setFormData] = useState({

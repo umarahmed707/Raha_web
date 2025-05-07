@@ -1,28 +1,32 @@
-
-import './App.css'
-import Navbar from './Component/Navbar'
-
-
-import 'aos/dist/aos.css'; // Import the AOS CSS
-import AOS from 'aos'; // Import AOS library
-import Home from './Allpage/Home';
-import Payroll from './Allpage/Payroll';
-
-// Initialize AOS
-AOS.init();
-
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./common/Navbar";
+import Service from "./Component/Home";
+import Industrial from "./Industrials/Industrial";
+import Insight from "./Insights/Insight";
+import Pricing from "./Pricing/Pricing";
+import ContactUs from "./Contact/ContactUs";
+import Footer from "./common/Footer";
+import Home from "./Component/Home";
+import Card from "./Component/Card";
 
 function App() {
-
-
   return (
-  <div className='bg-[#ECECEC] w-full'>
-      <Navbar/>
-      {/* <Home/> */}
-      <Payroll/>
-</div>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Card" element={<Card />} />
+        <Route path="/Industrial" element={<Industrial />} />
+        <Route path="/Insight" element={<Insight />} />
+        <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
+        
+       
+      </Routes>
+      <Footer/>
+    </Router>
+  );
 }
 
-export default App
+export default App;

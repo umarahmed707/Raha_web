@@ -64,15 +64,15 @@ export default function Home() {
           }}
         />
         <br />
-        <h1
+    
+      </h1>
+      <h1
           className="text-4xl bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[95px] font-bold tracking-[-0.06em]"
           data-aos="fade-up"
           data-aos-delay="300"
         >
           IRS Notice Resolution
         </h1>
-      </h1>
-
         {/* Description */}
         <p
           className="text-[16px] sm:text-[19px] mt-3"

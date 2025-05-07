@@ -200,7 +200,16 @@ export default function Clientinfo() {
 //                                     {[
 //                                         "Bookkeeping", "Financial Statements", "Tax Preparation and Filing",
 //                                         "Auditing", "Payroll Processing", "Business Registration",
-//                                         "ITIN Registration (if applicable)", "Net Worth Evaluation"
+//         //   <button class="section-btn">Client Information</button>
+//   <button class="section-btn">Privacy Agreement</button>
+//   <button class="section-btn">Engagement Letter</button>
+// </div>
+
+//             </div>
+//         </div>
+//     );
+// }
+                                "ITIN Registration (if applicable)", "Net Worth Evaluation"
 //                                     ].map(service => (
 //                                         <label key={service} className="flex items-center gap-2">
 //                                             <input type="checkbox" />
@@ -231,12 +240,3 @@ export default function Clientinfo() {
 
 //                 {/* Right Sidebar Buttons */}
 //                 <div class="button-container">
-//   <button class="section-btn">Client Information</button>
-//   <button class="section-btn">Privacy Agreement</button>
-//   <button class="section-btn">Engagement Letter</button>
-// </div>
-
-//             </div>
-//         </div>
-//     );
-// }

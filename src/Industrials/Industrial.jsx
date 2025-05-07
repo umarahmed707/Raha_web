@@ -16,10 +16,10 @@ export default function Industrial() {
       <h1
         className="text-[28px] sm:text-[30px]  lg:text-[55px]  font-semibold tracking-[-0.06em] leading-[1] sm:leading-[50px] lg:leading-[40px]">
         Where We Make Waves:
-        <br />
+        </h1>
         <h1 className="text-4xl bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[30px] lg:text-[55px] font-semibold tracking-[-0.06em]">
           Our Industry Spectrum
-        </h1></h1>
+        </h1>
         <p className='leading-[1.3]'>Industry-specific accounting services for construction,<br /> healthcare, hospitality, and non-profit organizations.</p>
       </div>
 <div className='flex flex-wrap justify-center gap-3 mb-10'>

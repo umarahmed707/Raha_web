@@ -1,5 +1,5 @@
 import React from 'react'
-import Pricing from '../../src/assets/image/Pricing.jpg'
+import Pricing from '../assets/image/pricing.jpg'
 import { FaCheck } from 'react-icons/fa';
 import img1 from '../assets/image/pricing1.png'
 import img2 from '../assets/image/pricing2.png'

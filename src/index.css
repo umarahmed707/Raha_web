@@ -33,6 +33,7 @@ box-shadow: 0px 4px 15.9px 0px rgba(255, 255, 255, 0.25) inset;
 backdrop-filter: blur(4.5px);
 color: white;
 padding: 5px;
+overflow: hidden;
 
 
  }
@@ -46,7 +47,7 @@ padding: 5px;
   border-radius: 15px;
 background: #FFF;
 
-height: 100%;
+
 
 
 }
@@ -90,7 +91,8 @@ color: #FFF;
   gap: 1.25rem; /* Gap between form elements */
   border-radius: 0.9375rem;
   border: 2px solid var(--Main-Radial, #587EDB);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+  background:white;
+  color: black;
   box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 0px 100px 40px 0px rgba(176, 176, 176, 0.01), 0px 56px 34px 0px rgba(176, 176, 176, 0.05), 0px 25px 25px 0px rgba(176, 176, 176, 0.09), 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
 }
 
@@ -105,8 +107,6 @@ color: #FFF;
 .client2{
   display: flex;
   justify-content: center;
-  margin-left:220px;
- width: 54rem;
  padding: 2.1875rem;
  flex-direction: column;
  gap: 1.25rem;
@@ -160,7 +160,7 @@ color: #FFF;
 
 .Clientinput1{
   display: flex;
-  padding: 10px 10px;
+  padding: 18px 10px;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
@@ -279,4 +279,90 @@ padding-bottom: 3px;
     align-items: flex-start; /* align left on large screens */
     margin-top: 0;
   }
+}
+
+
+
+
+/* Modal content */
+.modal-content {
+ 
+  padding: 20px;
+  border-radius: 5px;
+  width: auto;
+  
+}
+
+
+.close-btn {
+  
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+} 
+
+/* Slide In/Out animations */
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0); /* Start from normal position */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%); /* Slide out to the left */
+    opacity: 0; /* Fade out */
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+    opacity: 0; /* Start from invisible */
+  }
+  100% {
+    transform: translateX(0); /* Slide in to the normal position */
+    opacity: 1; /* Fade in */
+  }
+}
+
+/* Apply slide-out effect */
+.slide-out {
+  animation: slideOutLeft 1s forwards; /* Slide out with fade-out */
+}
+
+/* Apply slide-in effect */
+.slide-in {
+  animation: slideInRight 1s forwards; /* Slide in with fade-in */
+}
+
+/* Blue Overlay for transition effect */
+.blue-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1445C2; /* Blue color */
+  z-index: 10; /* Ensure it covers the content */
+  opacity: 0;
+  transition: opacity 10s ease-out; /* Fade out after transition */
+}
+
+.overlay-visible {
+  opacity: 1; /* Make the overlay visible */
+}
+
+/* This ensures the page content is positioned correctly */
+.page-transition {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #1445C2; /* Initial blue background color */
+}
+
+/* Page content */
+.page-content {
+  position: relative;
+  z-index: 1; /* Ensure page content is on top of overlay */
 }

@@ -11,6 +11,7 @@ import EnterCard from "./EnterCard";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DemoModal from '../Modelfile/DemoModel';
+import Particlesinterprise from '../Particlesinterprise';
 
 function Index () {
        const [showModal, setShowModal] = useState(false);
@@ -33,8 +34,27 @@ function Index () {
 
     
     <div className="bg-[url('./assets/image/Enterprisebg.png')] bg-cover bg-no-repeat  h-200 lg:h-200 ">
+    <EnterNavbar/>
+    <div >
+
+
+<div style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        zIndex: 0,
+      }}>
+        <Particlesinterprise id="particles"  />
+      </div>
+ 
+    <div style={{
+        position: "relative",
+        zIndex: 0,
+      
+        padding: "2rem",
+      }}>
 <div data-aos="fade-up">
-<EnterNavbar/>
+
 
     <div className="flex flex-col items-center justify-center  px-4">
       <p
@@ -62,7 +82,7 @@ function Index () {
       {/* Enterprise */}
       <button
         onClick={() => handleToggle(1)}
-        className='rounded-full text-white bg-gray-400 py-3 px-6 sm:py-2 sm:px-6 text-xs sm:text-sm w-[auto] sm:w-auto transition-all duration-300 '
+        className='rounded-full text-[#1445C2] bg-gradient-to-b from-[#ffffff] to-[#DADADA] py-3 px-6 sm:py-2 sm:px-6 text-xs sm:text-sm w-[auto] sm:w-auto transition-all duration-300 '
       
         data-aos="fade-up"
         data-aos-delay="300"
@@ -92,6 +112,8 @@ function Index () {
       </button>
 
       <DemoModal isOpen={showModal} onClose={() => setShowModal(false)} />
+        </div>
+    </div>
     </div>
       </div>
       </div>

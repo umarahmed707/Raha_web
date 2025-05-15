@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function FeedbackForm() {
   const [formData, setFormData] = useState({
@@ -25,11 +26,11 @@ export default function FeedbackForm() {
       setFormData({ ...formData, [name]: value });
     }
   };
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    alert('Form submitted!');
+    navigate('/Thankyou');
   };
 
   return (

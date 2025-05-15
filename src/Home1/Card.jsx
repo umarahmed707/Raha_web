@@ -19,7 +19,7 @@ export default function Card() {
 <>
 <section id="Service">
 <div className= "text-center " data-aos="fade-up" data-aos-delay="300">
-          <h1 className="text-[40px] lg:mx-75 sm:text-[60px] lg:text-[65px] font-semibold tracking-[-0.06em] leading-[40px] lg:leading-[50px]">
+          <h1 className="text-[40px] lg:mx-75 sm:text-[60px] lg:text-[65px] font-semibold tracking-[-0.06em] leading-[40px] lg:leading-[60px]">
             Our Suite of Business and
              Accounting Solutions
           </h1>

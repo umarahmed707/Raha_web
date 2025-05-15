@@ -49,8 +49,8 @@ const Card3 = () => {
     const carousel = carouselRef.current;
     if (!carousel) return;
 
-    const cardWidth = 320; // estimated width of one card including margin
-    let scrollSpeed = 1;
+    const cardWidth = 450; // estimated width of one card including margin
+    let scrollSpeed = 4;
 
     const startScroll = () => {
       const scroll = () => {
@@ -76,7 +76,7 @@ const Card3 = () => {
 
 
   return (
-    <div className="flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
   {/* Heading Section */}
 <div 
   className="py-8 text-center" 

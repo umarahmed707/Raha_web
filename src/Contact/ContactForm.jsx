@@ -1,7 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import AOS from 'aos';
 
 export default function ContactForm() {
+      useEffect(() => {
+        AOS.init(); // Initialize AOS
+      }, []);
    const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -28,12 +33,12 @@ const handleSubmit = (e) => {
 
     return (
         <>
-<div className="client2 px-4 mb-15 max-w-9xl lg:mx-20">
+<div className="client2 px-4 mb-15 max-w-9xl lg:mx-20" data-aos="zoom-in">
       <h1 className="font-bold text-3xl lg:text-5xl mb-8 ">
         Fill this form to get in touch with us
       </h1>
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5" data-aos="zoom-in">
           <input
             type="text"
             name="firstName"
@@ -54,7 +59,7 @@ const handleSubmit = (e) => {
           />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-5">
+        <div className="flex flex-col md:flex-row gap-5 mt-5" data-aos="zoom-in">
           <input
             type="tel"
             name="phone"
@@ -74,7 +79,7 @@ const handleSubmit = (e) => {
           />
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 " data-aos="zoom-in">
           <input
             type="text"
             name="subject"
@@ -85,7 +90,7 @@ const handleSubmit = (e) => {
           />
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5" data-aos="zoom-in">
           <textarea
             name="message"
             value={formData.message}
@@ -96,6 +101,7 @@ const handleSubmit = (e) => {
         </div>
 
         <button
+        data-aos="zoom-in"
           className="text-white font-bold py-3 px-6 mt-5 rounded-md bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-white hover:to-[#DADADA] hover:text-black hover:border border transition duration-300"
           type="submit"
         >

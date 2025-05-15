@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import 'aos/dist/aos.css'; // Import AOS CSS
+import AOS from 'aos';
 
 const Consultationform = () => {
+  AOS.init({ duration: 1000, once: false });
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -22,12 +24,12 @@ const Consultationform = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Data:', formData);
-    navigate('/thank-you');
+    navigate('/Thankyou');
   };
 
   return (
     <>
-    <div className="text-center my-10 px-4" >
+    <div className="text-center my-10 px-4" data-aos="fade-up" >
   <h1 className="text-4xl sm:text-[60px] lg:text-[95px] font-semibold tracking-tighter">
     Get
     <span className="bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent">
@@ -38,7 +40,7 @@ const Consultationform = () => {
 
 
     
-<div className="client2 px-4 py-10 lg:ml-25 lg:py-20 max-w-7xl w-uto lg:w-[70rem] lg:mx-20" 
+<div className="client2 px-4 py-10 lg:ml-25 lg:py-20 max-w-7xl w-uto lg:w-[70rem] lg:mx-20" data-aos="fade-up" 
 >
   <h1 className="font-bold text-3xl lg:text-5xl text-center mb-10">
     Schedule a Call Back
@@ -122,7 +124,7 @@ const Consultationform = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full lg:mx-25 max-w-7xl">
           {/* Call Us */}
-          <div className="bg-white p-6 rounded-2xl shadow w-auto">
+          <div className="bg-white p-6 rounded-2xl shadow w-auto" data-aos="fade-up">
             <h3 className="text-gray-700 text-[22px] font-semibold mb-2">Call us at</h3>
             <div className="flex items-center space-x-2 text-lg text-black font-semibold">
               <span>📞</span>
@@ -131,7 +133,7 @@ const Consultationform = () => {
           </div>
 
           {/* Email Us */}
-          <div className="bg-white p-6 rounded-2xl shadow">
+          <div className="bg-white p-6 rounded-2xl shadow " data-aos="fade-up">
             <h3 className="text-gray-700 text-[22px] font-semibold mb-2">Email us</h3>
             <div className="flex items-center space-x-2 text-lg text-black font-semibold">
               <span>📧</span>
@@ -140,7 +142,7 @@ const Consultationform = () => {
           </div>
 
           {/* Canfield Office */}
-          <div className="bg-white p-6 rounded-2xl shadow">
+          <div className="bg-white p-6 rounded-2xl shadow" data-aos="fade-up">
             <h3 className="text-gray-700 text-[22px] font-semibold mb-2">
               Visit us <span className="font-bold text-black">Canfield Office</span>
             </h3>
@@ -151,7 +153,7 @@ const Consultationform = () => {
           </div>
 
           {/* Dayton Office */}
-          <div className="bg-white p-6 rounded-2xl shadow">
+          <div className="bg-white p-6 rounded-2xl shadow" data-aos="fade-up">
             <h3 className="text-gray-700 text-[22px] font-semibold mb-2">
               Visit us <span className="font-bold text-black">Dayton Office</span>
             </h3>

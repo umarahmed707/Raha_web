@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../assets/image/RahaLogo.png'
 import InLogo from '../assets/image/InLogo.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const handleClick = () => {
@@ -10,8 +10,18 @@ const Footer = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+ const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Yahan aap form validation ya API call kar sakte hain agar chahein
+
+    // Form successful submit hone ke baad thank you page par redirect
+    navigate("/thankyou");
+  };
   return (
-    <footer className="bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-gray-800 border-t border-gray-300 px-6 py-10">
+    <footer className="relative z-10 bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-gray-800 border-t border-gray-300 px-6 py-10">
       <div className="max-w-7xl mx-auto md:mx-20 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Description */}
         <div>
@@ -27,22 +37,46 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
-          <ul className="space-y-1 text-sm">
-           <Link to='/#Service' onClick={handleClick}> <li className="hover:underline">Services</li></Link>
-            <Link to='/Industrial'><li className="hover:underline">Industries</li></Link>
-           <Link to='/Insight'> <li className="hover:underline">Insights</li></Link>
-           <Link to='/Pricing'> <li className="hover:underline">Pricing</li></Link>
-           <Link to='/About'> <li className="hover:underline">About</li></Link>
-           <Link to='/ContactUs'> <li className="hover:underline">Contact</li></Link>
-          </ul>
-        </div>
+<div>
+  <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
+  <ul className="space-y-1 text-sm">
+    <li className="hover:underline">
+      <Link to="/#Service" onClick={handleClick} className="block w-full">
+        Services
+      </Link>
+    </li>
+    <li className="hover:underline">
+      <Link to="/Industrial" className="block w-full">
+        Industries
+      </Link>
+    </li>
+    <li className="hover:underline">
+      <Link to="/Insight" className="block w-full">
+        Insights
+      </Link>
+    </li>
+    <li className="hover:underline">
+      <Link to="/Pricing" className="block w-full">
+        Pricing
+      </Link>
+    </li>
+    <li className="hover:underline">
+      <Link to="/About" className="block w-full">
+        About
+      </Link>
+    </li>
+    <li className="hover:underline">
+      <Link to="/ContactUs" className="block w-full">
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
 
         {/* Contact Form */}
         <div>
           <h3 className="font-semibold text-lg mb-2">Reach out to us</h3>
-          <form className="space-y-2">
+          <form className="space-y-2" onSubmit={handleSubmit}>
             <div className="flex space-x-2">
               <input
                 type="text"
@@ -61,7 +95,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" required
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" 
             >
               Submit
             </button>

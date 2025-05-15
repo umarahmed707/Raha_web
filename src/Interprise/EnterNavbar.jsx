@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
 
-    <nav className="rounded-[0.9375rem] border border-white/10 bg-white/10 shadow-[0px_5px_15px_0px_rgba(255,255,255,0.05)] px-4 py-3 mx-4 mb-15 md:mx-20">
+    <nav className="relative z-10 rounded-[0.9375rem] border border-white/10 bg-white/10 shadow-[0px_5px_15px_0px_rgba(255,255,255,0.05)] px-4 py-3 mx-4 mb-15 md:mx-20">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-white text-2xl font-bold">

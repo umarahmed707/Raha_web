@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tsparticles/all": "^3.8.1",
+    "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
@@ -20,6 +22,7 @@
     "react-scroll": "^1.9.3",
     "react-tsparticles": "^2.12.2",
     "react-typewriter-effect": "^1.1.0",
+    "tsparticles": "^3.8.1",
     "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {

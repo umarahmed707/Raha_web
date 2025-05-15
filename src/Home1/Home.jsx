@@ -11,7 +11,12 @@ import MidSection from './MidSection'
 import { Link, useNavigate } from 'react-router-dom'
 
 
+import { loadFull } from "tsparticles";
+import ParticlesComponent from '../ParticlesComponent';
+
+
 export default function Home() {
+
      const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     AOS.init(); // Initialize AOS
@@ -36,18 +41,39 @@ export default function Home() {
   return (
     <>
 
+<div >
 
-     <div className={`page-container ${animation}`}>
 
-      <div className='HomeHero max-w-7xl mx-auto text-center items-center py-5 px-5' data-aos="fade-up">
+<div  
+
+      style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "400px",  // sirf 400px height
+    zIndex: 0,
+    pointerEvents: "none",
+  }}
+>
+        <ParticlesComponent id="particles"  />
+      </div>
+ 
+    <div style={{
+        position: "relative",
+        zIndex: 10,
+      
+        padding: "2rem",
+      }}>
+      <div className='HomeHero max-w-7xl my-5 mx-auto text-center items-center py-5 px-5' data-aos="fade-up">
         <p className="pb-5 font-semibold text-sm sm:text-base md:text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="100">
           I am a
         </p>
-      <div className="page-content flex flex-row px-4 md:ml-[400px] py-3 lg:w-[400px] ml-5 w-[300px] rounded-[2.4375rem] bg-gradient-to-b from-[#1445C2] to-[#587EDB] justify-center gap-3 sm:gap-6 transition-all duration-300 ease-in-out">
+      <div className="page-content flex flex-row px-4 md:ml-[400px] py-3 lg:w-[400px] ml-5 w-[300px] rounded-[2.4375rem] bg-[#e2e2e2]  justify-center gap-3 sm:gap-6 transition-all duration-300 ease-in-out">
         {/* Individual / Small Business */}
         <button
-          onClick={() => handleToggle(0)}
-          className="text-xs text-white bg-transparent sm:text-sm rounded-full py-1 sm:py-2 px-2 sm:px-6 w-[auto] sm:w-auto transition-all duration-300 border-2"
+          
+          className="text-xs text-[#1445C2] bg-transparent sm:text-sm rounded-full py-1 sm:py-2 px-2 sm:px-6 w-[auto] sm:w-auto transition-all duration-300 border-2"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -57,7 +83,7 @@ export default function Home() {
         {/* Enterprise */}
         <button
           onClick={() => handleToggle(1)}
-          className="rounded-full text-white bg-gray-400 py-3 px-6 sm:py-2 sm:px-6 text-xs sm:text-sm w-[auto] sm:w-auto transition-all duration-300"
+          className="rounded-full text-white bg-gradient-to-b from-[#1445C2] to-[rgb(116,128,236)] py-3 px-6 sm:py-2 sm:px-6 text-xs sm:text-sm w-[auto] sm:w-auto transition-all duration-300"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -68,7 +94,7 @@ export default function Home() {
 
         {/* Heading */}
         <h1
-          className="text-[28px] sm:text-[80px] mt-15 lg:text-[95px] font-bold tracking-[-0.06em] leading-[0.1] sm:leading-[50px] lg:leading-[40px]"
+          className="text-[28px] sm:text-[80px] mt-15 lg:text-[95px] font-bold tracking-[-0.06em] leading-[1] sm:leading-[50px] lg:leading-[40px]"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -116,22 +142,26 @@ export default function Home() {
        <div className="p-6">
       <button
         onClick={() => setShowModal(true)}
-        className="px-6 py-3 bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border text-white rounded-lg"
+        className="px-6 py-3 bg-gradient-to-b mb-5 from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border text-white rounded-lg"
       >
       Book A Demo
       </button>
 
       <DemoModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
+    </div>
+</div>
 
-
-      </div>
-        </div>
+    
+        
+    
+      
       <Card />
       <Homeform />
       <MidSection />
       <Card2 />
       <Card3 />
+        </div>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const ConsultantModel = ({ isOpen, onClose }) => {
@@ -8,12 +9,12 @@ const ConsultantModel = ({ isOpen, onClose }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [natureOfBusiness, setNatureOfBusiness] = useState("");
-
+const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     // Optional: Add validation here if needed
     alert("Form Submitted Successfully!");
-
+navigate('/Thankyou');
     // Clear the form
     setFullName("");
     setPhoneNumber("");

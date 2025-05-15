@@ -23,7 +23,7 @@ backdrop-filter: blur(4.5px);
 color: white;
 padding: 5px;
 overflow: hidden;
-
+ z-index: 1000; 
 
  }
 .Spot:hover{

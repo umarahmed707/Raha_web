@@ -26,7 +26,7 @@ const DemoModal = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-white/30 backdrop-blur-sm z-50"
+      className="fixed inset-0 flex items-center justify-center bg-white/30 backdrop-blur-sm z-60 "
       onClick={onClose}
     >
       <div

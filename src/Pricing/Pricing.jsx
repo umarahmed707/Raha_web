@@ -14,7 +14,7 @@ export default function Header() {
     <>
     <div>
   <div>
-      <div className="text-center mt-20" data-aos="fade-up" data-aos-duration="1000">
+      <div className="text-center my-25" data-aos="fade-up" data-aos-duration="1000">
   <h1 
     className="sm:text-[60px] text-5xl lg:text-[95px] tracking-tighter font-semibold" 
     data-aos="zoom-in" 
@@ -32,7 +32,7 @@ export default function Header() {
   </h1>
 
   <p 
-    className="mt-3 text-[12px] lg:text-[14px] mx-5 lg:mx-80" 
+    className="mt-5 text-[12px] lg:text-[14px] mx-5 lg:mx-80" 
     data-aos="fade-up" 
     data-aos-delay="600"
   >
@@ -42,7 +42,7 @@ export default function Header() {
     <div className="p-6 " >
       <button
         onClick={() => setShowModal(true)}
-        className="px-6 py-3 bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border text-white rounded-lg"
+        className="px-6 py-3 z-10 mt-10 bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border text-white rounded-lg"
       >
       Book A Demo
       </button>
@@ -52,8 +52,8 @@ export default function Header() {
       
 
 </div>
-
 <Cardsection/>
+
 
 </div>
 </div>

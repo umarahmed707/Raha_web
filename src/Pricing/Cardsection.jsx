@@ -115,7 +115,7 @@ const goToNextModal = () => {
         width: '100%',
       }}
     >
-      <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-6" data-aos="fade-up">
+     <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-6" data-aos="fade-up">
         {/* Plan 1 */}
         <div className="Spot group w-full sm:w-[350px]" data-aos="zoom-in">
           <div className="SpotCard p-6 bg-opacity-80 rounded-lg">
@@ -278,7 +278,7 @@ const goToNextModal = () => {
       {selectedModal === 0 && (
         <div className="modal">
           <div><div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white p-10 rounded-lg w-auto relative max-h-[90vh] overflow-x-auto">
+      <div className="bg-white p-5 rounded-lg w-auto lg:w-[700px] relative max-h-[90vh] overflow-x-auto">
         <button
           className="absolute top-2 right-2 text-xl font-bold text-gray-500"
           onClick={closeModal}
@@ -411,7 +411,7 @@ const goToNextModal = () => {
       <div className="flex flex-col md:flex-row items-start">
         <div>
           <div className="client gap-7">
-            <h1 className="text-[25px] lg:text-[35px] font-bold mb-4 ">2. Privacy Agreement</h1>
+            <h1 className="text-[25px] lg:text-[35px] font-bold  ">2. Privacy Agreement</h1>
             <p className=" text-gray-900">
               Please read the Privacy Agreement below and click proceed.
             </p>
@@ -512,7 +512,7 @@ const goToNextModal = () => {
 
     <div className="flex flex-col md:flex-row">
       <div className="client w-full">
-        <h1 className="text-[25px] lg:text-[35px] font-bold  mb-6">3. Engagement Letter</h1>
+        <h1 className="text-[20px] lg:text-[35px] font-bold  ">3. Engagement Letter</h1>
         <div className="space-y-4 text-sm leading-relaxed">
           <p>Please read the Engagement Letter below and click proceed.</p>
           <p>This Engagement Letter ("Agreement") outlines the terms and conditions under which RAHA Financials ("the Company") will provide accounting and financial services to [Client's Name] ("the Client").</p>

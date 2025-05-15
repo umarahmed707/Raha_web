@@ -36,27 +36,27 @@ export default function Technology() {
         solutions that can help you navigate the financial landscape, from securing funding to managing growth and ensuring compliance.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">AI and Machine Learning</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">AI and Machine Learning</h3>
       <p className="text-lg text-gray-700 mb-6">
         At Raha Financials, our team has exclusive experience with artificial intelligence and machine learning technologies. We can help you secure funding for
         your AI research and development projects while protecting your AI algorithms and models. By offering an overview of potential revenue streams for your
         startup, we can assist with financial planning.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Cloud Computing</h3>
+      <h3 className="text-2xl font-bold text-gray-80 mt-8 mb-4">Cloud Computing</h3>
       <p className="text-lg text-gray-700 mb-6">
         At Raha Financials, we understand that investing in cloud infrastructure can be costly, that's why we can help you secure funding. By offering customer
         acquisition strategies and predicting your revenue streams and expenses, we can help you with financial forecasting.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Cybersecurity</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cybersecurity</h3>
       <p className="text-lg text-gray-700 mb-6">
         Nowadays it is necessary for any business to make sure it is secure as cybersecurity is a real threat. There are several well-known cybersecurity
         companies helping people stay safe, and if you are one of them, you are at the right place. We have something to offer which will help you. Our
         experienced professionals will help your tech company manage its finances. We offer HR services, tax returns, and financial forecasting.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Internet of Things (IoT)</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Internet of Things (IoT)</h3>
       <p className="text-lg text-gray-700 mb-6">
         Raha Financials has a team of experienced professionals who will help you in securing funds for product development. We offer IP protection and financial
         planning for your IoT products. Contact us today at Raha Consultation for a free consultation and discuss how we can fuel your success.

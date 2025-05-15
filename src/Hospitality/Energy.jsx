@@ -23,7 +23,7 @@ export default function Energy() {
   return (
     <div className='lg:mx-25 p-8 '> 
                   <div className='text-center mb-5 lg:my-10'>
-                          <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-semibold '>Energy and<span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Utilities</span></h1>
+                          <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-bold '>Energy and<span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Utilities</span></h1>
                           
                       </div>
               <div className='bg-repeat-round'>
@@ -34,28 +34,28 @@ export default function Energy() {
         Raha Financials plays a pivotal role in your business success by supporting the growth and development of the energy and utilities sector.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Renewable Energy</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Renewable Energy</h3>
       <p className="text-lg text-gray-700 mb-6">
         Raha Financials offers services for renewable energy projects like funding for the construction of solar farms, wind turbines, and hydroelectric plants.
         Our experienced team can help your business manage its day-to-day operations and meet short-term financial needs. We also offer assistance in securing
         loans for the expansion of your business.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Oil and Gas Industry</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Oil and Gas Industry</h3>
       <p className="text-lg text-gray-700 mb-6">
         Raha Financials helps businesses in the oil and gas industry by providing funding sources for oil and gas exploration and production activities, including
         seismic surveys, drilling, and well development. Our team also supports you in upgrading existing infrastructure, improving operational efficiency, and
         reducing environmental impact.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Utility Providers</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Utility Providers</h3>
       <p className="text-lg text-gray-700 mb-6">
         Raha Financials provides solutions for people in the utility business. By offering funding solutions for the construction and upgrade of utility
         infrastructure, such as power plants, transmission lines, and distribution networks. We also assist utility providers in meeting regulatory requirements
         related to environmental protection, energy efficiency, and customer service.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Sustainable Technology</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Sustainable Technology</h3>
       <p className="text-lg text-gray-700 mb-6">
         Raha Financials offers a wide range of services for the energy sector. We provide support for the development of innovative sustainable technologies and
         offer financial solutions to early-stage sustainable technology companies with high growth potential. Our team is skilled in helping companies

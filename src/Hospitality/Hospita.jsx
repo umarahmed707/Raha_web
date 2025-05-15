@@ -27,7 +27,7 @@ const Hospita = () => {
   return (
     <div className=" lg:mx-25 p-8 ">
            <div className='text-center mb-5 lg:my-10'>
-                  <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-semibold '>Hospitality and<span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Food Sector</span></h1>
+                  <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-bold '>Hospitality and<span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Food Sector</span></h1>
                   
               </div>
       <div className='bg-repeat-round'>
@@ -40,7 +40,7 @@ const Hospita = () => {
         dedicated to delivering high-quality services.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mb-4">Here's how Raha Financials can be your trusted financial partner:</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mb-4">Here's how Raha Financials can be your trusted financial partner:</h3>
       <p className="text-lg text-gray-700 mb-6">
         We start by focusing on your business's financial needs and offer full support by understanding your personalized financial goals and developing
         customized plans. We help you with business loans which may be needed for finance expansion, renovations, equipment purchases, or operational needs.
@@ -51,20 +51,20 @@ const Hospita = () => {
         financial decisions.
       </p>
 
-      <h4 className="text-xl font-semibold text-gray-800 mt-8 mb-4">Restaurants</h4>
+      <h4 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Restaurants</h4>
       <p className="text-lg text-gray-700 mb-6">
         In the Restaurants business, one may face high operating costs, including food purchases, labor expenses, and utility bills. With Raha Financials by
         your side, we can help by offering cash flow management by providing insights into revenue and expenditure and also assist in tracking food inventory.
         We offer payroll management services as well.
       </p>
 
-      <h4 className="text-xl font-semibold text-gray-800 mt-8 mb-4">Bed and Breakfasts</h4>
+      <h4 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Bed and Breakfasts</h4>
       <p className="text-lg text-gray-700 mb-6">
         Bed and breakfast comes with its own set of challenges but when you have professionals taking care of your finances, you can focus on providing the
         best service to the guests. Raha Financials can help your BNB by anticipating revenue trends and enabling effective financial planning. We offer
         assistance in managing guest reservations, payments, and property management.
       </p>
-      <h4 className="text-xl font-semibold text-gray-800 mt-8 mb-4">Catering Companies</h4>
+      <h4 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Catering Companies</h4>
       <p className="text-lg text-gray-700 mb-6">
       Raha Financials also offers Catering companies financial management solutions such as managing large-scale events, fluctuating demand, and ensuring food safety.
       </p>

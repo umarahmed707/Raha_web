@@ -23,7 +23,7 @@ export default function Agriculture() {
   return (
     <div> <div className='lg:mx-25 p-8 '> 
                   <div className='text-center mb-5 lg:my-10'>
-                          <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-semibold '>Agriculture and <span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Farming</span></h1>
+                          <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-bold '>Agriculture and <span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Farming</span></h1>
                           
                       </div>
               <div className='bg-repeat-round'>
@@ -35,26 +35,26 @@ export default function Agriculture() {
         services designed to help you sow the seeds for a prosperous future. Our team will ensure your business's success in various sectors.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Crop Production</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Crop Production</h3>
       <p className="text-lg text-gray-700 mb-6">
         Our team understands the ups and downs of the crop production business, and we are always ready with solutions. From operational costs to seasonal
         financing, we offer a complete package. Our team helps farmers on all scales, from purchasing seeds, fertilizers, and equipment to providing seasonal
         loans.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Livestock Farming</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Livestock Farming</h3>
       <p className="text-lg text-gray-700 mb-6">
         Keeping livestock farm animals is not for the faint-hearted, but our team can offer financing solutions during tough times. We assist with accessing
         funding for the construction of livestock facilities, purchasing livestock equipment, and managing overall working capital.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Agribusiness</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Agribusiness</h3>
       <p className="text-lg text-gray-700 mb-6">
         Raha Financials provides services for agribusinesses, such as food processing plants, agricultural supply companies, and agricultural technology firms.
         Our team offers support for your business by helping with finance management, tax returns, and audits.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Sustainable Agriculture</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Sustainable Agriculture</h3>
       <p className="text-lg text-gray-700 mb-6">
         While sustainable agriculture is comparatively new, our experience in providing support for such projects goes way back. We have expertise in preparing
         loan applications, tax returns, financial reports, and audits. We offer support in the development of sustainable agriculture technologies by helping

@@ -23,7 +23,7 @@ export default function Healthcare() {
   return (
     <div className='lg:mx-25 p-8 '> 
     <div className='text-center mb-5 lg:my-10'>
-            <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-semibold '>Healthcare and<span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Medical Services</span></h1>
+            <h1 className='sm:text-[60px] text-5xl lg:text-[70px] tracking-tighter font-bold '>Healthcare and<span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[70px]  tracking-[-0.06em]'> Medical Services</span></h1>
             
         </div>
 <div className='bg-repeat-round'>
@@ -35,27 +35,27 @@ export default function Healthcare() {
         and financial challenges every day. But Raha Financials is here to take care of all of your financial challenges.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Hospitals</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Hospitals</h3>
       <p className="text-lg text-gray-700 mb-6">
         Running hospitals can be hard when one isn't a pro in finance management, but now Raha Financials can help your hospital with revenue cycle management by
         streamlining patient billing, insurance claims, cost management, providing timely financial reports, payment collections, and minimizing tax liabilities.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Clinics</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Clinics</h3>
       <p className="text-lg text-gray-700 mb-6">
         Running a clinic requires constant attention and service. Raha Financials is here to take care of your clinic's financial stress. Partner with us, and we will
         help you with billing and insurance claims. We excel at optimizing expenses related to staffing, compliance with healthcare regulations, supplies, and
         overhead costs.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Dental Practices</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Dental Practices</h3>
       <p className="text-lg text-gray-700 mb-6">
         Our financial experts will take care of your revenue cycle management by streamlining patient billing and insurance claims. We know how challenging it is to
         manage expenses and make accurate financial reports. That's why we take care of your practice cost management by optimizing expenses related to dental
         equipment, supplies, and staffing.
       </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Veterinary Clinics</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Veterinary Clinics</h3>
       <p className="text-lg text-gray-700 mb-6">
         We will help your veterinary clinics work at their full potential to save precious animals by managing patient billing and insurance claims. We also offer
         accurate and timely financial statements and help in cost management.

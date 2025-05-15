@@ -31,9 +31,7 @@ import Healthcare from "./Hospitality/Healthcare";
 import Energy from "./Hospitality/Energy";
 import Agriculture from "./Hospitality/Agriculture";
 import Construction from "./Hospitality/Construction";
-import Model from "./Modelfile/Model";
-import Model2 from "./Modelfile/Model2";
-import Model3 from "./Modelfile/Model3";
+
 import Audit from "./enterAudit/Audit";
 import EnterBussiness from "./enterBussiness/EnterBussiness";
 import Hr from "./enterHrManagement/Hr";
@@ -45,6 +43,7 @@ import Consultationform from "./Contact/Consultationfrom";
 
 import ConsultantModal from "./Modelfile/ConsultantModel";
 import AboutUs from "./About/AboutUs";
+import Thankyou from "./Contact/Thankyou";
 
 
 
@@ -89,13 +88,12 @@ function App() {
           <Route path="/Insight" element={<Insight />} />
           <Route path="/BlogArticle" element={<BlogArticle />} />
           <Route path="/Pricing" element={<Pricing />} />
-          <Route path="/Model" element={<Model/>} />
-          <Route path="/Model2" element={<Model2 />} />
-           <Route path="/Model3" element={<Model3/>} />
+       
       
            <Route path="/ConsultantModel" element={<ConsultantModal/>} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Consultationform" element={<Consultationform/>} />
+          <Route path="/Thankyou" element={<Thankyou/>} />
           
         </Routes>
         <Footer />

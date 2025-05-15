@@ -1,17 +1,6 @@
 @import "tailwindcss";
 
-/* @font-face {
-    font-family: 'CustomFontOne';
-    src: url('./assets/fonts/UncutSans/UncutSans-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-.HomeHero h1 {
-    font-family: "CustomFontOne" sans-serif;
-}
- 
-/* global CSS file like index.css or App.css me add karein */
+
 .scrollbar-hidden {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */

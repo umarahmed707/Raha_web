@@ -4,23 +4,14 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './App.jsx';
-
-import Umar2 from './Umar2.jsx';
-import Umar from './Umar.jsx';
-
-
-
-
-
-
-
+import FeedbackForm from './Contact/Feedbackform.jsx';
 
 createRoot(document.getElementById('root')).render(
  
   
   <BrowserRouter>
-    <App/>
-
+    {/* <App/> */}
+<FeedbackForm/>
 
 </BrowserRouter>
 )

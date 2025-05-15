@@ -23,12 +23,12 @@ const handleSubmit = (e) => {
   console.log('Form Data:', formData);
 
   // Redirect after submission
-  navigate('/thank-you'); // Change this route as needed
+  navigate('/Thankyou'); // Change this route as needed
 };
 
     return (
         <>
-<div className="client2 px-4 lg:mb-15 max-w-9xl mx-20">
+<div className="client2 px-4 mb-15 max-w-9xl lg:mx-20">
       <h1 className="font-bold text-3xl lg:text-5xl mb-8 ">
         Fill this form to get in touch with us
       </h1>

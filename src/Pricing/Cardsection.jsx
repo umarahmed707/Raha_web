@@ -16,6 +16,7 @@ import AOS from 'aos'; // Import AOS library
 
 
 export default function Cardsection() {
+   const [showModal, setShowModal] = useState(false);
 const [fullName, setFullName] = useState('');
 
 
@@ -40,8 +41,8 @@ const [fullName, setFullName] = useState('');
   };
         const [signature, setSignature] = useState('');
         const [agreed, setAgreed] = useState(false);
-    
-      const [selectedModal, setSelectedModal] = useState(0); // Modal starts at step 0
+const [selectedModal, setSelectedModal] = useState(null);  // no modal open initially
+ // Modal starts at step 0
 
   const openModal = (modalIndex) => {
     setSelectedModal(modalIndex); // Set the selected modal index

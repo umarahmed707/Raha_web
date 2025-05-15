@@ -33,15 +33,17 @@ export default function FeedbackForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
-      <h2 className="text-2xl font-semibold text-center mb-2">Share Your</h2>
-      <h3 className="text-3xl font-semibold text-center text-blue-700 mb-6">
+    <>
+    <h2 className="text-7xl font-semibold text-center mb-2">Share Your</h2>
+      <h3 className="text-7xl font-semibold text-center text-blue-700 mb-6">
         Feedback & Reviews
       </h3>
 
+    <div className="max-w-md mx-auto mt-10 p-6 bg-gradient-to-b from-[#ffffff] to-[#DADADA] rounded-xl shadow-md">
+      
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <p className="text-center font-semibold mb-1">
+          <p className="text-center font-bold mb-1 text-2xl">
             How was your experience with <span className="font-bold">Raha Financials?</span>
           </p>
           <p className="text-center text-gray-500 mb-4 text-sm">
@@ -55,9 +57,9 @@ export default function FeedbackForm() {
                 type="button"
                 title={rate.title}
                 onClick={() => setSelectedRating(idx)}
-                className={`text-3xl p-2 rounded-full transition-colors ${
-                  selectedRating === idx ? 'bg-blue-100' : 'hover:bg-gray-100'
-                }`}
+                className='text-3xl p-2 rounded-full transition-colors bg-gradient-to-b from-[#ffffff] to-[#DADADA]'
+                  
+            
               >
                 {rate.label}
               </button>
@@ -68,7 +70,7 @@ export default function FeedbackForm() {
         <textarea
           placeholder="Your feedback matters! Please provide any additional comments or suggestions that you have about our services."
           rows={3}
-          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner resize-none placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner resize-none bg-gradient-to-b from-[#ffffff] to-[#DADADA] focus:outline-none focus:ring-2 focus:ring-blue-400"
         ></textarea>
 
         <input
@@ -77,7 +79,7 @@ export default function FeedbackForm() {
           placeholder="Name"
           value={formData.name}
           onChange={handleInputChange}
-          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner bg-gradient-to-b from-[#ffffff] to-[#DADADA] focus:outline-none focus:ring-2 focus:ring-blue-400"
           required
         />
 
@@ -87,7 +89,7 @@ export default function FeedbackForm() {
           placeholder="Company name"
           value={formData.companyName}
           onChange={handleInputChange}
-          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner bg-gradient-to-b from-[#ffffff] to-[#DADADA] focus:outline-none focus:ring-2 focus:ring-blue-400"
           required
         />
 
@@ -97,12 +99,12 @@ export default function FeedbackForm() {
           placeholder="Company Website (optional)"
           value={formData.website}
           onChange={handleInputChange}
-          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full rounded-xl border border-gray-300 p-3 shadow-inner bg-gradient-to-b from-[#ffffff] to-[#DADADA] focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <label
           htmlFor="logo-upload"
-          className="flex flex-col items-center justify-center w-full h-28 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-xl cursor-pointer hover:border-blue-400 focus:outline-none"
+          className="flex flex-col items-center justify-center w-full h-28 px-4 transition bbg-gradient-to-b from-[#ffffff] to-[#DADADA] border-2 border-gray-300 border-dashed rounded-xl cursor-pointer hover:border-blue-400 focus:outline-none"
         >
           <svg
             className="w-8 h-8 mb-3 text-gray-400"
@@ -136,5 +138,6 @@ export default function FeedbackForm() {
         </button>
       </form>
     </div>
+    </>
   );
 }

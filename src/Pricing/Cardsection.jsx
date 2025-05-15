@@ -16,7 +16,7 @@ import AOS from 'aos'; // Import AOS library
 
 
 export default function Cardsection() {
-   const [showModal, setShowModal] = useState(false);
+  
 const [fullName, setFullName] = useState('');
 
 
@@ -278,7 +278,7 @@ const goToNextModal = () => {
       {selectedModal === 0 && (
         <div className="modal">
           <div><div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white p-5 rounded-lg w-auto relative max-h-[90vh] overflow-x-auto">
+      <div className="bg-white p-10 rounded-lg w-auto relative max-h-[90vh] overflow-x-auto">
         <button
           className="absolute top-2 right-2 text-xl font-bold text-gray-500"
           onClick={closeModal}

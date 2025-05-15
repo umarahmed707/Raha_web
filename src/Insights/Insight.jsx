@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Insightcard from './insightcard'
 import Insightsfilter from './Insightsfilter'
 import Card3 from '../Home1/Card3'
 import FAQSection from './FAQSection'
@@ -7,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 import 'aos/dist/aos.css'; // Import AOS CSS
 import AOS from 'aos'; // Import AOS library
+import Insightcard from './InsightCard';
 
 export default function Insight() {
     useEffect(() => {

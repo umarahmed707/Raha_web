@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 import 'aos/dist/aos.css'; // Import AOS CSS
 import AOS from 'aos'; // Import AOS library
-import Insightcard from './InsightCard';
+import Insightcard from './Insightcard';
 
 export default function Insight() {
     useEffect(() => {

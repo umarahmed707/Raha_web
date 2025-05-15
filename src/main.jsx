@@ -10,8 +10,8 @@ createRoot(document.getElementById('root')).render(
  
   
   <BrowserRouter>
-    {/* <App/> */}
-<FeedbackForm/>
+    <App/>
+{/* <FeedbackForm/> */}
 
 </BrowserRouter>
 )

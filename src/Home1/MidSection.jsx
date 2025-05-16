@@ -12,10 +12,15 @@ export default function AccountingPage() {
   return (
 <div className="relative w-full h-screen overflow-hidden mb-10">
   {/* Background Video */}
- <video autoPlay loop muted className="w-full h-auto">
-  <source src="../assests/image/HomeMid.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+    <video
+      autoPlay
+      loop
+      muted
+      className="absolute top-0 left-0 w-full h-full object-cover"
+    >
+      <source src={HomeMidVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
 
   {/* Overlay content - Position relative with z-index to appear on top */}

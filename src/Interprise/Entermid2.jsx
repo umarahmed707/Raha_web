@@ -11,11 +11,11 @@ export default function Entermid() {
         <div>
 
             <div
-                className="relative bg-[url('./assets/image/Entermid2.png')]  bg-no-repeat py-25  bg-cover bg-center flex items-center justify-center text-white"
+                className=" relative bg-[url('./assets/image/Entermid2.png')] mb-15 mx-20 rounded-4xl bg-no-repeat py-25  bg-cover bg-center flex items-center justify-center text-white"
             >
 
 
-                <div className="relative z-10 text-center max-w-4xl px-4" data-aos="fade-up">
+                <div className="flex flex-col items-center justify-center relative z-10 text-center max-w-4xl px-4" data-aos="fade-up">
                     <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tighter mb-6">
                         Expansion and Market Infiltration Services
                     </h1>
@@ -26,7 +26,7 @@ export default function Entermid() {
 
                  
           <Link to='/ContactUs'>
-          <button className="text-[12px] lg:text-xl font-semibold px-4 py-3 bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-black hover:from-[#1445C2] hover:to-[#587EDB] hover:text-white rounded-lg">
+          <button className="Call-btn">
             Contact us
           </button>
           </Link>

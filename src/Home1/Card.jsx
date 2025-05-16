@@ -18,7 +18,7 @@ export default function Card() {
   return (
 <>
 <section id="Service">
-<div className= "text-center " data-aos="fade-up" data-aos-delay="300">
+<div className= "text-center mt-[-35px] " data-aos="fade-up" data-aos-delay="300">
           <h1 className="text-[40px] lg:mx-75 sm:text-[60px] lg:text-[65px] font-semibold tracking-[-0.06em] leading-[40px] lg:leading-[60px]">
             Our Suite of Business and
              Accounting Solutions
@@ -28,7 +28,7 @@ export default function Card() {
             <br /> Tax, bookkeeping, payroll, and more.
           </p>
         </div>
-<div className="flex flex-wrap justify-center gap-5 mt-5 mx-5" >
+<div className="flex flex-wrap justify-center gap-5 mt-10 lg:mt-15 mx-5" >
 
   {/* Bookkeeping Card */}
   <div className="w-full sm:w-1/3 md:w-1/4 flex justify-center" data-aos="fade-up">
@@ -36,7 +36,7 @@ export default function Card() {
       <CardLayouts
         img={img1}
         title="Bookkeeping"
-        parah="This is the foundation of good financial management, tracking income and expenses."
+        parah="To obtain a clear view of your business’s economic standing, RAHA Financials provide accurate and efficient Bookkeeping of all business transactions."
       />
     </Link>
   </div>
@@ -47,7 +47,8 @@ export default function Card() {
       <CardLayouts
         img={img2}
         title="Software Selection and Setup"
-        parah="Choosing and implementing accounting software that meets the specific needs of the business."
+        parah="Optimal accounting software like Xero, Quickbooks etc are a necessity nowadays for any business. Our
+                  Xero experts will help you in the selection and smooth operation of Xero software."
       />
     </Link>
   </div>
@@ -58,7 +59,7 @@ export default function Card() {
       <CardLayouts
         img={img3}
         title="LLC Registration"
-        parah="Creates a limited liability company, separating your personal assets from business ones. Protects you financially."
+        parah="To protect your assets and liabilities, we offer help in forming an LLC. Our LLC registration service is one of the best in the US."
       />
     </Link>
   </div>
@@ -69,7 +70,7 @@ export default function Card() {
       <CardLayouts
         img={img1}
         title="Payroll Processing"
-        parah="Calculating and distributing salaries and wages to employees, withholding and paying payroll taxes."
+        parah="To ensure timely payments and compliance with all labor laws internationally, we offer top-notch payroll processing, adp workforce, adp run and Paychex payroll services."
       />
     </Link>
   </div>
@@ -80,7 +81,8 @@ export default function Card() {
       <CardLayouts
         img={img2}
         title="ITIN"
-        parah="Assigned by the IRS for non-SSN holders who need to file US tax returns or open financial accounts."
+        parah="We assist our non-resident US customers with obtaining an Individual Taxpayer Identification Number
+                  (ITIN) which is needed to taxfiling US tax returns."
       />
     </Link>
   </div>
@@ -91,7 +93,7 @@ export default function Card() {
       <CardLayouts
         img={img3}
         title="Tax Filing"
-        parah="Ensures your business complies with tax regulations and maximizes deductions to minimize tax liability."
+        parah="With our expertise in preparing and filing tax documents we offer taxact free, turbotax free file, turbo tax free usa service to follow tax regulations and maximize tax benefits."
       />
     </Link>
   </div>
@@ -102,7 +104,8 @@ export default function Card() {
       <CardLayouts
         img={img1}
         title="Financial Reporting"
-        parah="Drafting reports like income statements and balance sheets to understand the financial health of the business."
+        parah="Assistance in preparation of financial statements like h&r block file taxes, freshbook cloud
+                  accounting and Xero financial statements to understand your business's financial performance."
       />
     </Link>
   </div>
@@ -113,7 +116,8 @@ export default function Card() {
       <CardLayouts
         img={img2}
         title="Business Budgeting"
-        parah="Creating a spending plan for the business based on projected income and expenses."
+        parah="We help in the creation of customized Xero budgeting and forecasting services and freshbooks budgeting
+                  to track your income and expenses, which in turn help in making informed decisions."
       />
     </Link>
   </div>
@@ -121,13 +125,13 @@ export default function Card() {
   {/* Buttons Section */}
   <div className="flex w-full flex-wrap justify-center mx-10 sm:justify-center gap-3 mt-5 sm:gap-4 pb-5" data-aos="zoom-in">
      <Link to="/Consultationform">
-    <button className="rounded-lg py-2 px-2 sm:py-4 sm:px-6 text-xs sm:text-[18px] text-white bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border w-[auto] sm:w-auto">
+    <button className="BlueBtn">
       Request Consultation
     </button>
     </Link>
     <button
     onClick={() => window.location.href = 'tel:+16282004141'}
-    className="border text-[#1445C2] text-xs sm:text-[18px] rounded-lg py-1 sm:py-4 sm:px-4 bg-gradient-to-b from-[#ffffff] to-[#DADADA] hover:from-[#587EDB] hover:to-[#1445C2] hover:text-white w-[30%] sm:w-[10%]">
+    className="Call-btn">
       Call Us
     </button>
   </div>

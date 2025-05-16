@@ -24,7 +24,7 @@ export default function ContactUs() {
     {/* Left Info Section */}
     <div className='w-full lg:w-1/2 space-y-6 px-4'>
   {/* Phone */}
-  <div className='Clientinput1 border border-[#587EDB] ' data-aos="fade-up">
+  <div className='Con' data-aos="fade-up">
     <p className='text-sm sm:text-[16px] p-3 '>
       Call us at
       <span className='flex items-center gap-3 mt-2  font-bold text-sm sm:text-[20px]'>
@@ -35,7 +35,7 @@ export default function ContactUs() {
   </div>
 
   {/* Email */}
-  <div className='Clientinput1 border border-[#587EDB] ' data-aos="fade-up">
+  <div className='Con' data-aos="fade-up">
     <p className='text-sm sm:text-[16px] p-3'>
       Email us at
       <span className='flex items-center gap-3 mt-2 font-bold text-sm sm:text-[20px]'>
@@ -46,7 +46,7 @@ export default function ContactUs() {
   </div>
 
   {/* Office 1 */}
-  <div className='Clientinput1 border border-[#587EDB] ' data-aos="fade-up">
+  <div className='Con' data-aos="fade-up">
     <p className='text-sm sm:text-[16px] p-3'>
       Visit us at <b>Office 1</b>
       <span className='flex items-start gap-3 mt-2 font-bold text-sm sm:text-[20px]'>
@@ -57,7 +57,7 @@ export default function ContactUs() {
   </div>
 
   {/* Office 2 */}
-  <div className='Clientinput1 border border-[#587EDB] ' data-aos="fade-up">
+  <div className='Con' data-aos="fade-up">
     <p className='text-sm sm:text-[16px] p-3'>
       Visit us at <b>Office 2</b>
       <span className='flex items-start gap-3 mt-2 font-bold text-sm sm:text-[20px]'>
@@ -69,7 +69,7 @@ export default function ContactUs() {
 
   {/* Button */}
   <div>
-    <button data-aos="fade-up"  onClick={() => window.location.href = 'tel:+16282004141'} className="text-white w-full font-bold py-4 px-6 rounded-md bg-gradient-to-b from-[#1445C2] to-[#587EDB] border hover:border hover:bg-none hover:text-[#1445C2] transition-all duration-300">
+    <button data-aos="fade-up"  onClick={() => window.location.href = 'tel:+16282004141'} className="BlueBtn w-full text-center">
       Get Call Back
     </button>
   </div>

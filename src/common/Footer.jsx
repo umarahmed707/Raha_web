@@ -21,15 +21,15 @@ const Footer = () => {
     navigate("/thankyou");
   };
   return (
-    <footer className="relative z-10 bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-gray-800 border-t border-gray-300 px-6 py-10">
-      <div className="max-w-7xl mx-auto md:mx-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="relative z-10 bg-gradient-to-b from-[#ffffff] text-gray-800 border-t border-gray-300 px-6 py-10">
+      <div className="max-w-[1600px] md:mx-15  gap-8 flex flex-col md:flex-row justify-between">
         {/* Logo and Description */}
         <div>
           <Link to='/'>
           <img src={Logo} className="text-xl font-bold mb-2 "/>
           </Link>
-          <p className="text-sm mb-4">
-            Our team at RAHA is dedicated to ensuring your books are accurate, compliance is maintained, and your financial decisions are backed by strategic insights.
+          <p className="text-[16px] leading-5 mb-4 w-[350px]">
+            Our team at RAHA is dedicated to ensuring your books are accurate,compliance  is maintained, and your financial decisions are backed by strategic insights.
           </p>
           <div className="inline-block mt-2">
             <img src={InLogo} alt="LinkedIn" className="w-8 h-8" />
@@ -38,8 +38,8 @@ const Footer = () => {
 
         {/* Quick Links */}
 <div>
-  <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
-  <ul className="space-y-1 text-sm">
+  <h3 className="font-bold text-[20px] mb-2">Quick Links</h3>
+  <ul className="space-y-1 text-[18px]">
     <li className="hover:underline">
       <Link to="/#Service" onClick={handleClick} className="block w-full">
         Services
@@ -75,27 +75,27 @@ const Footer = () => {
 
         {/* Contact Form */}
         <div>
-          <h3 className="font-semibold text-lg mb-2">Reach out to us</h3>
+          <h3 className="font-bold text-[20px] mb-2">Reach out to us</h3>
           <form className="space-y-2" onSubmit={handleSubmit}>
             <div className="flex space-x-2">
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-1/2 px-3 py-2 bg-[E8E8E8] shadow-lg  rounded" required
+                className="w-1/2 px-3 py-3 bg-[#E8E8E8] shadow-lg focus:outline-none focus:ring-1 focus:ring-[#1445C2]  rounded" required
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-1/2 px-3 py-2 bg-[E8E8E8] shadow-lg  rounded" required
+                className="w-1/2 px-3 py-3 bg-[#E8E8E8] shadow-lg focus:outline-none focus:ring-1 focus:ring-[#1445C2]  rounded" required
               />
             </div>
             <textarea
               placeholder="Message"
-              className="w-full px-3 py-2 bg-[E8E8E8] shadow-lg rounded h-24" required
+              className="w-full px-3 py-2 bg-[#E8E8E8]  shadow-lg focus:outline-none focus:ring-1 focus:ring-[#1445C2] rounded h-24" required
             />
             <button
               type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" 
+              className="BlueBtn" 
             >
               Submit
             </button>
@@ -104,7 +104,7 @@ const Footer = () => {
       </div>
 
       {/* Footer bottom text */}
-      <div className="text-xs text-center text-gray-500 mt-8">
+      <div className="text-[16px] text-center text-gray-500 mt-8 lg:mx-45">
         © 2021 - 2023 RAHA Financials LLC. All rights reserved. RAHA Financials refers to the RAHA Financials network and/or one or more of its member firms, each of which is a separate legal entity.
       </div>
     </footer>

@@ -107,7 +107,7 @@ const goToNextModal = () => {
   return (
     <div>
     <div
-      className="mt-6 px-4 py-10 text-white"
+      className=" px-4 py-10 text-white"
       style={{
         backgroundImage: `url(${Pricing})`,
         backgroundSize: 'cover',
@@ -216,16 +216,16 @@ const goToNextModal = () => {
 
         {/* Enterprise Plan */}
         <div
-          className="Spot group mt-10 px-4 md:px-10 mx-5 lg:mx-25"
+          className="Spot group mt-10 px-4 md:px-10  lg:mx-25"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          <div className="SpotCard p-6 md:p-8 bg-opacity-80 rounded-lg max-w-6xl mx-auto">
+          <div className="SpotCard p-6 md:p-8 bg-opacity-80 rounded-lg max-w-9xl md:pr-25">
             <div className="bg-white w-[70px] h-[65px] group-hover:bg-[#1445C2] rounded-2xl p-3 flex justify-center">
               <img src={img4} alt="Enterprise Plan" width={40} />
             </div>
             <h2 className="text-xl font-semibold mt-3">Enterprise Plan</h2>
-            <div className="flex flex-col md:flex-row md:gap-80 gap-6 mt-4">
+            <div className="flex flex-col md:flex-row md:gap-110 gap-6 mt-4">
               <ul className="text-[17px] space-y-2 opacity-90">
                 {[
                   'CFO-Level Advisory',
@@ -294,7 +294,7 @@ const goToNextModal = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
         <input
           type="text"
-          className="Clientinput flex-1"
+          className="Clientinput "
           placeholder="Full Name*"
           value={fullName}
           onChange={handleFullNameChange}

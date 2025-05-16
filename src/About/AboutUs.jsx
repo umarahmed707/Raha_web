@@ -46,7 +46,7 @@ export default function AboutUs() {
   return (
    
     <div className='overflow-hidden' >
-       <div data-aos="fade-up">
+       <div data-aos="fade-up flex flex-col justify-center items-center">
       <div className='text-center mt-10 ' >
         <h1 className='sm:text-[60px] text-5xl lg:text-[85px] tracking-tighter font-semibold '><span className='bg-gradient-to-b from-[#1445C2] to-[#587EDB] bg-clip-text text-transparent mt-0 sm:text-[60px] lg:text-[85px]  tracking-[-0.06em]'>About</span> us</h1>
         <p className='mt-3 lg:mx-90'>Raha Financial’s payroll advisory service provides top-notch services with quickbooks enhanced payroll and adp payroll.
@@ -57,7 +57,7 @@ export default function AboutUs() {
             <div className="p-6" >
       <button
         onClick={() => setShowModal(true)}
-        className="px-6 py-3 bg-gradient-to-b lg:ml-145 mb-5 from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border text-white rounded-lg"
+        className="Call-btn md:ml-140"
       >
       Book A Demo
       </button>
@@ -109,13 +109,13 @@ export default function AboutUs() {
               </div>
                 <div className="flex w-full flex-wrap justify-center mx-10 sm:justify-center gap-3 mt-5 sm:gap-4 pb-5" data-aos="zoom-in">
                    <Link to="/Consultationform">
-                  <button className="rounded-lg py-2 px-2 sm:py-4 sm:px-6 text-xs sm:text-[18px] text-white bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border w-[auto] sm:w-auto">
+                  <button className="BlueBtn rounded-lg py-2 px-2 sm:py-4 sm:px-6 text-xs sm:text-[18px] text-white bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border w-[auto] sm:w-auto">
                     Request Consultation
                   </button>
                   </Link>
                   <button
                   onClick={() => window.location.href = 'tel:+16282004141'}
-                  className="border text-[#1445C2] text-xs sm:text-[18px] rounded-lg py-1 sm:py-4 sm:px-4 bg-gradient-to-b from-[#ffffff] to-[#DADADA] hover:from-[#587EDB] hover:to-[#1445C2] hover:text-white w-[30%] sm:w-[10%]">
+                  className="Call-btn">
                     Call Us
                   </button>
                 </div>

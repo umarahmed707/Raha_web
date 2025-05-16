@@ -14,7 +14,7 @@ export default function Entermid() {
 
 
     <div
-      className="relative bg-[url('./assets/image/Entermidbg.png')]  bg-no-repeat py-25 mt-580 lg:mt-230 bg-cover bg-center flex items-center justify-center text-white"
+      className="relative bg-[url('./assets/image/Entermidbg.png')]  bg-no-repeat py-25 mt-610 lg:mt-250 bg-cover bg-center flex items-center justify-center text-white"
     >
       
 
@@ -31,7 +31,7 @@ export default function Entermid() {
 
       <div className="flex flex-wrap gap-4 mt-6 justify-center" data-aos="zoom-in-up">
         <Link to='/About'>
-          <button className="text-[12px] lg:text-xl font-semibold px-4 py-3 bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-black hover:from-[#1445C2] hover:to-[#587EDB] hover:text-white rounded-lg">
+          <button className="Call-btn">
             Who we are
           </button>
           </Link>
@@ -42,13 +42,13 @@ export default function Entermid() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }}
-  className="text-[12px] lg:text-xl font-semibold px-4 py-3 bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-black hover:from-[#1445C2] hover:to-[#587EDB] hover:text-white rounded-lg"
+  className="Call-btn"
 >
   Our Services
 </button>
 
           <Link to='/ContactUs'>
-          <button className="text-[12px] lg:text-xl font-semibold px-4 py-3 bg-gradient-to-b from-[#ffffff] to-[#DADADA] text-black hover:from-[#1445C2] hover:to-[#587EDB] hover:text-white rounded-lg">
+          <button className="Call-btn">
             Contact us
           </button>
           </Link>

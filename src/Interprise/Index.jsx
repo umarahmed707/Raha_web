@@ -18,21 +18,36 @@ function Index () {
     useEffect(() => {
         AOS.init({ duration: 1000 });
       }, []);
-      const [selected, setSelected] = useState(0); // 0: Individual, 1: Enterprise
-      const navigate = useNavigate();
-    
-      const handleToggle = (value) => {
-        setSelected(value);
-        if (value === 0) {
-          navigate("/");
-        } else {
-          navigate("/Index");
-        }
-      };
+     const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleToggle = (val) => {
+    // Jab Enterprise button click ho
+    setIsTransitioning(true);
+
+    // Animation ke baad new page ya content load karo
+    setTimeout(() => {
+  window.location.href = '/';  // yahan apni dusri page ki URL lagao
+}, 500);
+  };
   return (
     <>
 
-    
+    <div style={{ position: "relative", overflow: "hidden" }}>
+      {/* Blue overlay */}
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "#1445C2",
+          opacity: isTransitioning ? 1 : 0,
+          pointerEvents: "none",
+          transition: "opacity 0.5s ease",
+          zIndex: 10000,
+        }}
+      />
     <div className="bg-[url('./assets/image/Enterprisebg.png')] bg-cover bg-no-repeat  h-200 lg:h-200 ">
     <EnterNavbar/>
     <div >
@@ -66,30 +81,36 @@ function Index () {
       </p>
 
     
-    <div className="flex  flex-row px-4 py-3 rounded-[2.4375rem] bg-[rgba(243,243,243,0.2)] justify-between gap-3 sm:gap-6 transition-all duration-300 ease-in-out">
-      {/* Individual / Small Business */}
-      <button
-        onClick={() => handleToggle(0)}
-        className='text-xs text-white border-[#1445C2] bg-transparent" sm:text-sm rounded-full py-1 sm:py-2 px-2 sm:px-6 w-[auto] sm:w-auto transition-all duration-300 border-2 '
-      
-       
-        data-aos="fade-up"
-        data-aos-delay="200"
+ <div
+        style={{
+         transition: "transform 0.5s ease-in-out",
+          transform: isTransitioning ? "translateX(-100%)" : "translateX(0)",
+                    position: "relative",
+          zIndex: 1,
+        }}
       >
-        Individual/Small Business
-      </button>
+        <div className="page-content flex flex-row px-2 lg:w-[400px] py-2 w-[300px] rounded-[2.4375rem] bg-[#ffffff] justify-center gap-3 sm:gap-3 transition-all duration-300 ease-in-out">
+          {/* Individual / Small Business */}
+          <button
+          onClick={() => handleToggle(1)}
+            className="text-xs text-[#1445C2] bg-transparent sm:text-[17px] rounded-full py-1 sm:py-2 px-2 sm:px-4 w-[auto] sm:w-auto transition-all duration-300 border"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Individual/Small Business
+          </button>
 
-      {/* Enterprise */}
-      <button
-        onClick={() => handleToggle(1)}
-        className='rounded-full text-[#1445C2] bg-gradient-to-b from-[#ffffff] to-[#DADADA] py-3 px-6 sm:py-2 sm:px-6 text-xs sm:text-sm w-[auto] sm:w-auto transition-all duration-300 '
-      
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        Enterprise
-      </button>
-    </div>
+          {/* Enterprise */}
+          <button
+            
+            className="rounded-full text-white bg-gradient-to-b from-[#1445C2] to-[rgb(116,128,236)] py-3 px-6 sm:py-3 sm:px-6 text-xs sm:text-xl w-[auto] sm:w-auto transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Enterprise
+          </button>
+        </div>
+      </div>
 
     </div>
 
@@ -97,7 +118,7 @@ function Index () {
 
 
       {/* Hero Section */}
-      <div className="text-center text-white py-12 px-4" >
+      <div className="flex flex-col justify-center items-center text-center text-white py-12 px-4" >
         <h1 className="text-4xl lg:text-7xl font-bold lg:mx-45 mb-2">What we Provide for the 
         Success of your Business</h1>
         <p className="text-lg mb-6">
@@ -106,7 +127,7 @@ function Index () {
              <div >
       <button
         onClick={() => setShowModal(true)}
-        className="px-6 py-3 border bg-gradient-to-b from-[#ffffff] to-[#DADADA] hover:from-[#1445C2] hover:to-[#587EDB] hover:text-white hover:border text-[#1445C2] rounded-lg"
+        className="Call-btn"
       >
       Book A Demo
       </button>
@@ -122,6 +143,7 @@ function Index () {
     <Entermid/>
     <Card3/>
 <Entermid2/>
+</div>
     </>
   );
 };

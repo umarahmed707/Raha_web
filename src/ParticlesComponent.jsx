@@ -28,7 +28,7 @@ const ParticlesComponent = (props) => {
     });
   }, []);
   const linksDistance = windowWidth < 768 ? 150 : 150;
- const linksDistance1 = windowWidth1 >= 1024 ? 50 : 250;
+ const linksDistance1 = windowWidth1 >= 1024 ? 40 : 220;
 
   
   const particlesLoaded = (container) => {
@@ -75,7 +75,7 @@ const ParticlesComponent = (props) => {
           distance: linksDistance,
           distance: linksDistance1,
           enable: true,
-          opacity: 0.2,
+          opacity: 0.1,
           width: 1,
         },
         move: {
@@ -92,7 +92,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: false,
           },
-          value: 300,
+          value: 200,
         },
         opacity: {
           value: 1,

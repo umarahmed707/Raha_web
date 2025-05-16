@@ -104,7 +104,7 @@ const InsightFilterCard = ({ blogs }) => {
           <img
             src={blog.image}
             alt={blog.title}
-            className="w-full h-70 object-cover"
+            className="w-full h-65 object-cover"
           />
         </Link>
         <div className="p-4 text-left">

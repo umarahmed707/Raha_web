@@ -33,15 +33,15 @@ export default function Industrial() {
     Our Industry Spectrum
   </h1>
   
-  <p className='leading-[1.3]' data-aos="fade-up" data-aos-delay="300">
-    Industry-specific accounting services for construction,<br />
+  <p className='leading-[1.3] mx-5 md:mx-75' data-aos="fade-up" data-aos-delay="300">
+    Industry-specific accounting services for construction,
     healthcare, hospitality, and non-profit organizations.
   </p>
 </div>
 
-<div className='flex flex-wrap justify-center gap-3 mb-10' data-aos="fade-up">
+<div className='flex flex-wrap justify-center md:mx-20 gap-3 mb-10' data-aos="fade-up">
   <Link to='/Hospita'>
-    <IndustrialCard img={img1} h1='Hospitality and Food Sector' data-aos="zoom-in" data-aos-delay="100" />
+    <IndustrialCard  img={img1}  h1='Hospitality and Food Sector' data-aos="zoom-in" data-aos-delay="100" />
   </Link>
   <Link to='/Retail'>
     <IndustrialCard img={img2} h1='Ecommerce and Retail' data-aos="zoom-in" data-aos-delay="200" />
@@ -66,15 +66,15 @@ export default function Industrial() {
   </Link>
 </div>
 
-<div className="flex w-full flex-wrap ml-15 mx-10 sm:justify-center gap-3 mt-5 sm:gap-2 pb-5" data-aos="fade-up" data-aos-delay="300">
+<div className="flex w-full flex-wrap justify-center mb-15 sm:justify-center gap-3 mt-5 sm:gap-2 pb-5" data-aos="fade-up" data-aos-delay="300">
   <Link to="/Consultationform">
-    <button className="rounded-lg py-3 px-4 sm:py-4 sm:px-6 text-xs sm:text-[18px] text-white bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-[#ffffff] hover:to-[#DADADA] hover:text-[#1445C2] hover:border w-[auto] sm:w-auto">
+    <button className="BlueBtn">
       Request Consultation
     </button>
   </Link>
   <button
     onClick={() => window.location.href = 'tel:+16282004141'}
-    className="border text-[#1445C2] text-xs sm:text-[18px] rounded-lg py-3 sm:py-4 sm:px-4 bg-gradient-to-b from-[#ffffff] to-[#DADADA] hover:from-[#587EDB] hover:to-[#1445C2] hover:text-white w-[30%] sm:w-[10%]"
+    className="Call-btn"
   >
     Call Us
   </button>

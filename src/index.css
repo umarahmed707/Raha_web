@@ -1,18 +1,143 @@
 @import "tailwindcss";
 
-
-.scrollbar-hidden {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('/fonts/UncutSans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+/* Firefox */
+* {
+  scrollbar-width: none; /* scrollbar hide karta hai */
+  -ms-overflow-style: none; /* IE and Edge */
 }
+
+/* Chrome, Safari, Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+.Con{
+  display: flex;
+padding: 1.25rem 1.5625rem;
+align-items: flex-end;
+gap: 0.625rem;
+align-self: stretch;
+border-radius: 0.9375rem;
+border: 1px solid #DADADA;
+background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 0px 100px 40px 0px rgba(176, 176, 176, 0.01), 0px 56px 34px 0px rgba(176, 176, 176, 0.05), 0px 25px 25px 0px rgba(176, 176, 176, 0.09), 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+}
+
+.simple-box {
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, transparent, transparent);
+  width: auto;
+  padding-bottom: 2rem; /* pb-8 = 2rem */
+  padding: 1.5rem; /* p-6 = 1.5rem */
+  border-radius: 1rem; /* rounded-2xl approx 16px = 1rem */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl approx */
+  color: black;
+  transition: color 0.3s ease, background-image 0.3s ease;
+}
+
+.simple-box:hover {
+  background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+
+  color: white;
+}
+
+.BlueBtn{
+  
+  display: flex;
+padding: 0.9375rem 1.5625rem;
+align-items: center;
+gap: 0.625rem;
+border-radius: 0.625rem;
+background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+color: var(--White, #FFF);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.025rem;
+border: 1px solid transparent;
+}
+
+.BlueBtn:hover{
+  background: white;
+  border: 1px solid blue;
+  color: blue;
+}
+
+.Call-btn{
+      display: flex;
+padding: 0.9375rem 1.5625rem;
+align-items: center;
+   background: white;
+  border: 1px solid blue;
+  color: blue;
+  gap: 0.625rem;
+border-radius: 0.625rem;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.025rem;
+border: 1px solid blue;
+}
+.Call-btn:hover{
+
+
+background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+color: var(--White, #FFF);
+border: 1px solid white;
+
+}
+.Contact{
+      display: flex;
+padding: 0.9375rem 1.5625rem;
+align-items: center;
+   background: #F6F6F6;
+ 
+  color: black;
+  gap: 0.625rem;
+border-radius: 0.625rem;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.025rem;
+
+}
+.Contact:hover{
+background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+color: var(--White, #FFF);
+
+}
+.rotating-text-container {
+  position: relative;
+  height: 2rem; /* adjust height as needed */
+  overflow: hidden;
+}
+
+.hero-secondary-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1445C2;
+
+}
+
+
 
 body{
-  background-color: #ECECEC;
+  background-color: #F7F9FD;
   overflow-x: hidden;
+    font-family: 'Uncut Sans', sans-serif;
+
 }
  .Spot{
   border-radius: 15px;
@@ -356,4 +481,31 @@ padding-bottom: 3px;
   z-index: 1; /* Ensure page content is on top of overlay */
 }
 
+.forminput{
+  border-radius: 0.9375rem;
+border: 1px solid #DADADA;
+background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0.00), 0px 100px 40px 0px rgba(176, 176, 176, 0.01), 0px 56px 34px 0px rgba(176, 176, 176, 0.05), 0px 25px 25px 0px rgba(176, 176, 176, 0.09), 0px 6px 14px 0px rgba(176, 176, 176, 0.10);
+}
 
+.page-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.page-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.page-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.page-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}

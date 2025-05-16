@@ -4,7 +4,7 @@ export default function Cardtext(props) {
   return (
 <div className=" w-full h-auto max-w-[380px] pb-8  text-black">
   <div>
-    <p className="text-start text-[18px] bg-gradient-to-b from-[#ffffff] to-[#DADADA] p-4 rounded-lg">{props.text}</p>
+    <p className="text-start text-[18px] bg-gradient-to-b lg:leading-[1.2] from-[#ffffff] to-[#dadada] shadow-lg p-4 rounded-lg">{props.text}</p>
 
     <div className="flex flex-row md:flex-row gap-4 mt-4">
       <div>

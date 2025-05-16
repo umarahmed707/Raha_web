@@ -33,7 +33,7 @@ const handleSubmit = (e) => {
 
     return (
         <>
-<div className="client2 px-4 mb-15 max-w-9xl lg:mx-20" data-aos="zoom-in">
+<div className="client2 px-4 mb-15 max-w-7xl lg:mx-30" data-aos="zoom-in">
       <h1 className="font-bold text-3xl lg:text-5xl mb-8 ">
         Fill this form to get in touch with us
       </h1>
@@ -44,7 +44,7 @@ const handleSubmit = (e) => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            className="Clientinput1 flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none"
+            className=" w-full sm:w-1/2 p-4 rounded-lg shadow-lg border border-[#DADADA] bg-white focus:outline-none focus:ring-1 focus:ring-[#1445C2]" 
             placeholder="First Name*"
             required
           />
@@ -53,7 +53,7 @@ const handleSubmit = (e) => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            className="Clientinput1 flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none"
+            className=" w-full sm:w-1/2 p-4 rounded-lg shadow-lg border border-[#DADADA] bg-white focus:outline-none focus:ring-1 focus:ring-[#1445C2]" 
             placeholder="Last Name"
             required
           />
@@ -65,7 +65,7 @@ const handleSubmit = (e) => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="Clientinput1 flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none"
+            className=" w-full sm:w-1/2 p-4 rounded-lg shadow-lg border border-[#DADADA] bg-white focus:outline-none focus:ring-1 focus:ring-[#1445C2]" 
             placeholder="Phone Number"
           />
           <input
@@ -73,7 +73,7 @@ const handleSubmit = (e) => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="Clientinput1 flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none"
+            className=" w-full sm:w-1/2 p-4 rounded-lg shadow-lg border border-[#DADADA] bg-white focus:outline-none focus:ring-1 focus:ring-[#1445C2]" 
             placeholder="Email*"
             required
           />
@@ -85,7 +85,7 @@ const handleSubmit = (e) => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="Clientinput1 w-full p-3 rounded-lg border border-gray-300 focus:outline-none"
+            className=" w-full sm:w-1/1 p-4 rounded-lg shadow-lg border border-[#DADADA] bg-white focus:outline-none focus:ring-1 focus:ring-[#1445C2]" 
             placeholder="Subject"
           />
         </div>
@@ -95,14 +95,14 @@ const handleSubmit = (e) => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="Clientinput1 w-full h-[150px] p-3 rounded-lg border border-gray-300 focus:outline-none resize-none"
+           className=" w-full h-[200px] p-4 rounded-lg shadow-lg border border-[#DADADA] bg-white focus:outline-none focus:ring-1 focus:ring-[#1445C2]" 
             placeholder="Message"
           ></textarea>
         </div>
 
         <button
         data-aos="zoom-in"
-          className="text-white font-bold py-3 px-6 mt-5 rounded-md bg-gradient-to-b from-[#1445C2] to-[#587EDB] hover:from-white hover:to-[#DADADA] hover:text-black hover:border border transition duration-300"
+          className="BlueBtn mt-5"
           type="submit"
         >
           Submit

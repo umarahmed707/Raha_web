@@ -4,7 +4,7 @@ import img2 from '../assets/image/Entermid2.png'
 
 const BlogArticle = () => {
   return (
-    <div className=" p-6 space-y-8 ">
+    <div className=" p-6 space-y-8 flex flex-col items-center md:px-25">
       {/* Header */}
       <h1 className="text-3xl md:text-5xl font-bold text-center lg:mt-10">
         The Impact of Artificial Intelligence <br /> in the Finance Sector
@@ -14,14 +14,14 @@ const BlogArticle = () => {
       <img
         src={img1}
         alt="AI in finance"
-        className="w-[1100px] lg:mx-25 bg-center flex justify-center items-center lg:mt-20 rounded-lg shadow"
+        className="w-full  bg-center flex justify-center items-center lg:mt-15 rounded-lg shadow"
       />
 
      
-<section className=" lg:mx-25 px-4 lg:py-12 space-y-10 text-gray-700">
+<section className="  px-4 lg:py-12 space-y-10 text-black text-[18px]">
       {/* Heading */}
       <div>
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold  mb-4">
           How Accounting Services Drive Business Success
         </h1>
         <p>
@@ -30,7 +30,7 @@ const BlogArticle = () => {
           reporting of financial transactions. This ensures accuracy,
           transparency, and obedience with regulatory standards.
         </p>
-        <p className="mt-4">
+        <p className="mt-4 text-[20px]">
           In the USA, accounting has moved beyond just analyzing data to become
           a valuable tool for making smart decisions. Professionals not only
           maintain records but also interpret data for strategic planning, tax
@@ -41,7 +41,7 @@ const BlogArticle = () => {
 
       {/* Bookkeeping Section */}
       <div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+        <h2 className="text-3xl font-semibold  mb-2">
           Why Bookkeeping Matters
         </h2>
         <p>
@@ -65,7 +65,7 @@ const BlogArticle = () => {
 
       {/* Navigating Services */}
       <div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+        <h2 className="text-3xl font-semibold  mb-2">
           Navigating Accounting and Bookkeeping Services in USA
         </h2>
         <p>
@@ -86,7 +86,7 @@ const BlogArticle = () => {
 
       {/* Service Types */}
       <div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+        <h2 className="text-2xl font-semibold  mb-2">
           Accounting and Bookkeeping Services in USA
         </h2>
         <p>
@@ -103,7 +103,7 @@ const BlogArticle = () => {
       {/* Lists */}
       <div className="space-y-6">
         <div>
-          <h3 className="text-xl font-medium text-gray-800 mb-1">
+          <h3 className="text-2xl font-semibold mb-1">
             List of Accounting and Bookkeeping Services in USA
           </h3>
           <p>
@@ -116,7 +116,7 @@ const BlogArticle = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium text-gray-800 mb-1">
+          <h3 className="text-2xl font-semibold mb-1">
             Free Accounting and Bookkeeping Services in USA
           </h3>
           <p>
@@ -130,7 +130,7 @@ const BlogArticle = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium text-gray-800 mb-1">
+          <h3 className="text-2xl font-semibold mb-1">
             Best Accounting and Bookkeeping Services in USA
           </h3>
           <p>
@@ -144,7 +144,7 @@ const BlogArticle = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium text-gray-800 mb-1">
+          <h3 className="text-2xl font-semibold mb-1">
             Top Accounting and Bookkeeping Services in USA
           </h3>
           <p>
@@ -162,7 +162,7 @@ const BlogArticle = () => {
 
 
     <div
-      className="rounded-2xl bg-cover bg-center lg:mx-20 text-white py-20 px-6 text-center"
+      className="rounded-2xl bg-cover bg-center  text-white py-20 px-6 text-center"
       style={{ backgroundImage: `url(${img2})` }}
     >
       <h2 className="text-2xl md:text-5xl lg:mx-45 font-semibold mb-4">
@@ -173,20 +173,20 @@ const BlogArticle = () => {
         assistance, you can effortlessly set up your payroll system, ensure timely and accurate
         processing, and navigate payroll taxes with ease.
       </p>
-      <div className="flex justify-center gap-4">
-        <button className="hover:text-white hover:border-2 border bg-gradient-to-b from-white to-[#DADADA] hover:from-[#587EDB] hover:to-[#1445C2] text-[#1445C2] px-6 py-2 rounded-lg font-medium shadow-md ">
+      <div className="flex flex-row md:flex-row justify-center gap-4">
+        <button className="Call-btn ">
           Request Consultation
         </button>
-        <button className="border text-[#1445C2] bg-gradient-to-b  from-white to-[#DADADA] hover:from-[#587EDB] hover:to-[#1445C2] px-6 py-2 rounded-lg font-medium hover:text-white transition">
+        <button className="Call-btn">
           Call Us
         </button>
       </div>
     </div>
       {/* Continuation of Article */}
-      <section className="lg:mx-25 px-4 py-12 space-y-10 text-gray-700">
+      <section className=" px-4 py-12 space-y-10 ">
       {/* Introduction */}
       <div>
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <h2 className="text-4xl font-bold mb-4">
           Discovering the Ideal Financial Ally
         </h2>
         <p>
@@ -200,28 +200,28 @@ const BlogArticle = () => {
       {/* Key Elements */}
       <div className="space-y-6">
         <div>
-          <h3 className="text-xl font-semibold">Understanding Your Unique Needs</h3>
+          <h3 className="text-2xl font-semibold">Understanding Your Unique Needs</h3>
           <p>
             Define what kind of financial assistance your business needs. Whether it’s basic bookkeeping or complex tax help, knowing your needs is the first step toward finding the right solution.
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold">Navigating Location and Communication Dynamics</h3>
+          <h3 className="text-2xl font-semibold">Navigating Location and Communication Dynamics</h3>
           <p>
             Decide whether virtual or local services fit best, and ensure the communication style aligns with your preferences to build a collaborative relationship.
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold">Experience and Expertise</h3>
+          <h3 className="text-2xl font-semibold">Experience and Expertise</h3>
           <p>
             Check the provider’s background. Look for experience in your industry and read client reviews to ensure they understand your challenges and can provide dependable support.
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold">Cost and Transparency</h3>
+          <h3 className="text-2xl font-semibold">Cost and Transparency</h3>
           <p>
             Compare pricing structures and ensure transparent communication regarding fees to avoid unexpected costs and build trust.
           </p>
@@ -233,7 +233,7 @@ const BlogArticle = () => {
         <h3 className="text-2xl font-bold text-gray-900">Here’s how RAHA Financials can help you:</h3>
 
         <div>
-          <h4 className="text-lg font-semibold">Accurate and Efficient Bookkeeping</h4>
+          <h4 className="text-2xl font-semibold">Accurate and Efficient Bookkeeping</h4>
           <ul className="list-disc list-inside space-y-2">
             <li>Maintain up-to-date books with accurate record-keeping</li>
             <li>Implement best practices with tools like QuickBooks, Xero, Sage</li>
@@ -242,7 +242,7 @@ const BlogArticle = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold">Tax Guidance and Preparation</h4>
+          <h4 className="text-2xl font-semibold">Tax Guidance and Preparation</h4>
           <ul className="list-disc list-inside space-y-2">
             <li>Ensure compliance with federal and state tax laws</li>
             <li>Prepare individual and business tax returns efficiently</li>
@@ -251,7 +251,7 @@ const BlogArticle = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold">Financial Expertise and Support</h4>
+          <h4 className="text-2xl font-semibold">Financial Expertise and Support</h4>
           <ul className="list-disc list-inside space-y-2">
             <li>Consulting for business and personal finance decisions</li>
             <li>Tools for budgeting and forecasting</li>
@@ -260,7 +260,7 @@ const BlogArticle = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold">Tailored Solutions</h4>
+          <h4 className="text-2xl font-semibold">Tailored Solutions</h4>
           <ul className="list-disc list-inside space-y-2">
             <li>Flexible service packages to fit your specific goals</li>
             <li>Transparent communication and pricing</li>
@@ -270,7 +270,7 @@ const BlogArticle = () => {
 
       {/* Benefits List */}
       <div className="space-y-4">
-        <h3 className="text-2xl font-bold text-gray-900">
+        <h3 className="text-2xl font-bold ">
           Ways RAHA Financials Can Benefit Your Business:
         </h3>
         <ul className="list-disc list-inside space-y-2">

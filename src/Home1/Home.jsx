@@ -76,7 +76,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
       width: "100vw",
       height: "100vh",
       backgroundColor: "#1445C2",
-      transition: "left 0.7s ease 0.2s",
+      transition: "left 0.6s ease 0.2s",
       zIndex: 9998,
     }}
   />
@@ -90,7 +90,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
       width: "100vw",
       height: "100vh",
       backgroundColor: "#0D2A7A",
-      transition: "left 0.9s ease 0.4s",
+      transition: "left 0.7s ease 0.4s",
       zIndex: 9999,
     }}
   />

@@ -14,8 +14,18 @@ export default function Entermid() {
 
 
     <div
-      className="relative bg-[url('./assets/image/Entermidbg.png')]  bg-no-repeat py-25 mt-610 lg:mt-250 bg-cover bg-center flex items-center justify-center text-white"
+      className=" relative w-full h-screen overflow-hidden  bg-no-repeat py-25 mt-610 lg:mt-250 bg-cover bg-center flex items-center justify-center text-white"
     >
+       
+      {/* Background Video */}
+      <video
+        src="/EnterVedio.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-50"
+      ></video>
       
 
       <div className="relative z-10 text-center max-w-4xl px-4" data-aos="fade-up">

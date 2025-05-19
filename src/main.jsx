@@ -4,7 +4,7 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './App.jsx';
-import Home3 from './Home3.jsx';
+
 
 
 
@@ -14,6 +14,6 @@ createRoot(document.getElementById('root')).render(
   
   <BrowserRouter>
     <App/>
-{/* <Home3/> */}
+
 </BrowserRouter>
 )

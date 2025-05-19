@@ -89,11 +89,11 @@ function Index () {
           zIndex: 1,
         }}
       >
-        <div className="page-content flex flex-row px-2 lg:w-[400px] py-2 w-[300px] rounded-[2.4375rem] bg-[#ffffff] justify-center gap-3 sm:gap-3 transition-all duration-300 ease-in-out">
+        <div className="page-content EnterBtn">
           {/* Individual / Small Business */}
           <button
           onClick={() => handleToggle(1)}
-            className="text-xs text-[#1445C2] bg-transparent sm:text-[17px] rounded-full py-1 sm:py-2 px-2 sm:px-4 w-[auto] sm:w-auto transition-all duration-300 border"
+            className="text-xs text-[#ffffff] sm:text-[17px] rounded-full py-1 sm:py-2 px-2 sm:px-4 w-[auto] sm:w-auto "
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -103,7 +103,7 @@ function Index () {
           {/* Enterprise */}
           <button
             
-            className="rounded-full text-white bg-gradient-to-b from-[#1445C2] to-[rgb(116,128,236)] py-3 px-6 sm:py-3 sm:px-6 text-xs sm:text-xl w-[auto] sm:w-auto transition-all duration-300"
+            className="Enter text-white"
             data-aos="fade-up"
             data-aos-delay="300"
           >

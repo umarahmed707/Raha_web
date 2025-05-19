@@ -11,7 +11,7 @@ import MidSection from './MidSection'
 import { Link, useNavigate } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import { loadFull } from "tsparticles";
+
 import ParticlesComponent from '../ParticlesComponent';
 
 const texts = [
@@ -107,10 +107,10 @@ const [currentIndex, setCurrentIndex] = useState(0);
           zIndex: 1,
         }}
       >
-        <div className="page-content flex flex-row px-2 lg:w-[400px] py-2 w-[300px] rounded-[2.4375rem] bg-[#ffffff] justify-center gap-3 sm:gap-3 transition-all duration-300 ease-in-out">
+        <div className="page-content HomeEnterbg">
           {/* Individual / Small Business */}
           <button
-            className="text-xs text-[#1445C2] bg-transparent sm:text-[17px] rounded-full py-1 sm:py-2 px-2 sm:px-4 w-[auto] sm:w-auto transition-all duration-300 border"
+            className="HomeIndividual"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -120,7 +120,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
           {/* Enterprise */}
           <button
             onClick={() => handleToggle(1)}
-            className="rounded-full text-white bg-gradient-to-b from-[#1445C2] to-[rgb(116,128,236)] py-3 px-6 sm:py-3 sm:px-6 text-xs sm:text-xl w-[auto] sm:w-auto transition-all duration-300"
+            className="HomeEnter "
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -168,7 +168,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
           whiteSpace: "normal",
           textAlign: "center",
           fontWeight: 800,
-          fontSize: "6vw", // Responsive font size, adjusts with viewport width
+          fontSize: "7vw", // Responsive font size, adjusts with viewport width
           maxFontSize: "100px",
             background: "linear-gradient(to bottom, #1445C2, #587EDB)",
   WebkitBackgroundClip: "text",

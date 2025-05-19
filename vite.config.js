@@ -5,8 +5,15 @@ import tailwindcss from '@tailwindcss/vite'  // Make sure this is imported
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), 
-    tailwindcss()]  // Add tailwindcss plugin here
+  plugins: [react(),
+  tailwindcss()],
+
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    historyApiFallback: true, // 👈 Add this to handle SPA fallback locally
+  }// Add tailwindcss plugin here
 })
 
 // import { defineConfig } from 'vite'

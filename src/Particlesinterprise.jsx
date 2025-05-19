@@ -71,7 +71,7 @@ const ParticlesComponent = (props) => {
         links: {
           color: "#ffffff",
           distance: linksDistance,
-          distance: linksDistance1,
+       
           enable: true,
           opacity: 0.2,
           width: 1,
@@ -105,7 +105,7 @@ const ParticlesComponent = (props) => {
     
       detectRetina: true,
     }),
-    [linksDistance,linksDistance1 ],
+    [linksDistance],
   );
 
 

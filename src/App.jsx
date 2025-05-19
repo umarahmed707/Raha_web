@@ -12,7 +12,7 @@ import Pricing from "./Pricing/Pricing";
 import ContactUs from "./Contact/ContactUs";
 import Footer from "./common/Footer";
 import Home from "./Home1/Home";
-import Index from "./Interprise/Index";
+
 import BlogArticle from "./Insights/BlogArticle";
 import Payroll from "./Payrollfile/Payroll";
 import Service from "./Home1/Card";
@@ -44,6 +44,7 @@ import Consultationform from "./Contact/Consultationfrom";
 import ConsultantModal from "./Modelfile/ConsultantModel";
 import AboutUs from "./About/AboutUs";
 import Thankyou from "./Contact/Thankyou";
+import EnterPrise from "./Interprise/EnterPrise";
 
 
 
@@ -54,11 +55,11 @@ function App() {
 
   return (
 <>
-  {location.pathname !== "/Index" && <Navbar />}
+  {location.pathname !== "/EnterPrise" && <Navbar />}
        
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Index" element={<Index />} />
+          <Route path="/EnterPrise" element={<EnterPrise />} />
           <Route path="/Audit" element={<Audit />} />
           <Route path="/About" element={<AboutUs />} />
           <Route path="/EnterBussiness" element={<EnterBussiness />} />

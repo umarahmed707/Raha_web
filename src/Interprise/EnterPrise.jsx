@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import DemoModal from '../Modelfile/DemoModel';
 import Particlesinterprise from '../Particlesinterprise';
 
-function Index () {
+function EnterPrise () {
        const [showModal, setShowModal] = useState(false);
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -174,4 +174,4 @@ function Index () {
   );
 };
 
-export default Index;
+export default EnterPrise;

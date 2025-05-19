@@ -47,7 +47,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
 
     // Animation ke baad new page ya content load karo
     setTimeout(() => {
-  window.location.href = '/Index';  // yahan apni dusri page ki URL lagao
+  window.location.href = '/EnterPrise';  // yahan apni dusri page ki URL lagao
 }, 500);
   };
   return (

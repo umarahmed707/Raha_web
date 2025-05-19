@@ -135,7 +135,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
         <div className="page-content HomeEnterbg">
           {/* Individual / Small Business */}
           <button
-            className="HomeIndividual"
+            className="HomeIndividual "
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -145,9 +145,9 @@ const [currentIndex, setCurrentIndex] = useState(0);
           {/* Enterprise */}
           <button
             onClick={() => handleToggle(1)}
-            className="HomeEnter "
+            className="HomeEnter text-[14px]"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="300" 
           >
             Enterprise
           </button>

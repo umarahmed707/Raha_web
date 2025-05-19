@@ -12,7 +12,7 @@ export default function Enterprisecard(props) {
         <img
           src={props.image}
           alt='img'
-          className="w-full h-40 object-contain "
+          className="w-full h-50 object-contain "
         />
       </div>
 

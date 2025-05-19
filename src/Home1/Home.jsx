@@ -54,20 +54,47 @@ const [currentIndex, setCurrentIndex] = useState(0);
     <>
 <div className={isTransitioning ? "fade-out" : ""} style={{ position: "relative", overflow: "hidden" }}>
       {/* Blue overlay */}
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "100vh",
-          backgroundColor: "#1445C2",
-          opacity: isTransitioning ? 1 : 0,
-          pointerEvents: "none",
-          transition: "opacity 0.5s ease",
-          zIndex: 9999,
-        }}
-      />
+  <div
+    style={{
+      position: "fixed",
+      top: 0,
+      left: isTransitioning ? "0" : "100vw", // Slide to the right
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "black",
+      transition: "left 0.5s ease",
+      zIndex: 9997,
+    }}
+  />
+
+  {/* First Blue Layer */}
+  <div
+    style={{
+      position: "fixed",
+      top: 0,
+      left: isTransitioning ? "0" : "100vw", // Slide to the right
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "#1445C2",
+      transition: "left 0.7s ease 0.2s",
+      zIndex: 9998,
+    }}
+  />
+
+  {/* Second Blue Layer */}
+  <div
+    style={{
+      position: "fixed",
+      top: 0,
+      left: isTransitioning ? "0" : "100vw", // Slide to the right
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "#0D2A7A",
+      transition: "left 0.9s ease 0.4s",
+      zIndex: 9999,
+    }}
+  />
+
 <div >
 
 

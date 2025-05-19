@@ -8,8 +8,6 @@ import Card2 from './Card2';
 import Card3 from './Card3';
 import DemoModal from "../Modelfile/DemoModel";
 import MidSection from './MidSection'
-import { Link, useNavigate } from 'react-router-dom'
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
 import ParticlesComponent from '../ParticlesComponent';
@@ -172,7 +170,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
       style={{
         position: "relative",
         height: "containerHeight",
-        minHeight: "7rem",
+        minHeight: "8rem",
         maxHeight: "1rem",
         overflow: "hidden",
         width: "100%",

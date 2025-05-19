@@ -49,7 +49,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Book" className="font-bold mb-2 block">Accounting and Bookkeeping Services</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Full Service Booking</li>
                     <li>Accounts Payable and Receivable</li>
                     <li>General Ledger and Management</li>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Software" className="font-bold mb-2 block">Software Setup and Integration</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Setting up Xero and QuickBooks</li>
                     <li>Accounting Software Integration</li>
                     <li>Process Automation Implementation</li>
@@ -69,7 +69,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/LLC" className="font-bold mb-2 block">LLC Registration</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Tax Planning and Filing</li>
                     <li>International Tax Compliance</li>
                     <li>Indirect Tax Management</li>
@@ -78,7 +78,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Payroll" className="font-bold mb-2 block">Global Services</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Global Payroll Management</li>
                     <li>International Tax Compliance</li>
                     <li>Multi-Country Financial Reporting</li>
@@ -88,7 +88,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Itin" className="font-bold mb-2 block">ITIN Services</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>What is an ITIN?</li>
                     <li>Apply for a New ITIN</li>
                     <li>Renew Existing ITIN</li>
@@ -100,7 +100,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Tax" className="font-bold mb-2 block">Tax Services</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Tax Planning and Filing</li>
                     <li>International Tax Compliance</li>
                     <li>Indirect Tax Management</li>
@@ -109,7 +109,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Financial" className="font-bold mb-2 block">Financial Management and Consulting</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Financial Planning and Analysis</li>
                     <li>Strategic Financial Consulting</li>
                     <li>Budgeting and Forecasting</li>
@@ -119,7 +119,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Bussiness" className="font-bold mb-2 block">Business Budgeting</Link>
-                  <ul className="space-y-1 text-sm">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Create a Business Budget</li>
                     <li>Expense Tracking Strategies</li>
                     <li>Revenue Forecasting</li>
@@ -145,7 +145,7 @@ const Navbar = () => {
               <div className="grid grid-cols-4 gap-8 text-left  text-sm">
                 <div>
                   <Link to="/Hospita" className="font-bold text-[18px] mb-2 block">Hospitality and Food Services</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Restaurants and Cafes</li>
                     <li>Hotels and Resorts</li>
                     <li>Catering Services</li>
@@ -154,7 +154,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link to="/Retail" className="font-bold text-[18px] mb-2 block">E-commerce and Retail</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Online Marketplaces</li>
                     <li>Fashion and Apparel</li>
                     <li>Electronics and Gadgets</li>
@@ -163,7 +163,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link to="/Real" className="font-bold text-[18px] mb-2 block">Real Estate</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Property Management</li>
                     <li>Real Estate Development</li>
                     <li>Rental Services</li>
@@ -172,7 +172,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link to="/Technology" className="font-bold text-[18px] mb-2 block">Technology and Startups</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Software Development</li>
                     <li>IT Services</li>
                     <li>Mobile App Development</li>
@@ -184,7 +184,7 @@ const Navbar = () => {
 
                 <div>
                   <Link to="/Healthcare" className="font-bold text-[18px] mb-2 block">Healthcare and Medical Services</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Hospitals and Clinics</li>
                     <li>Medical Device Manufacturers</li>
                     <li>Telehealth Services</li>
@@ -193,7 +193,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link to="/Energy" className="font-bold text-[18px] mb-2 block">Energy and Utilities</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Renewable Energy</li>
                     <li>Utilities Providers</li>
                     <li>Oil and Gas Industry</li>
@@ -202,7 +202,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link to="/Agriculture" className="font-bold text-[18px] mb-2 block">Agriculture and Farming</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Crop Farming</li>
                     <li>Livestock Farming</li>
                     <li>Agribusiness</li>
@@ -211,7 +211,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link to="/Construction" className="font-bold text-[18px] mb-2 block">Construction and Infrastructure</Link>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-[16px]">
                     <li>Commercial Construction</li>
                     <li>Residential Construction</li>
                     <li>Infrastructure Development</li>
